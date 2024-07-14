@@ -36,6 +36,8 @@ jobs:
         with:
           tag_name: ${{ steps.extract_version.outputs.version }}
           name: Release ${{ steps.extract_version.outputs.version }}
+          body: "![GitHub Downloads (specific asset, latest release)](https://img.shields.io/github/downloads/ChrisTitusTech/winutil/latest/winutil.ps1)"
+          append_body: true
           files: ./winutil.ps1
           prerelease: false
           make_latest: "true"
