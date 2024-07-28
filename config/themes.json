@@ -25,10 +25,6 @@
 
                     "MicroWinLogoSize": "10",
 
-                    "ProgressBarForegroundColor": "#FFAC1C",
-                    "ProgressBarBackgroundColor": "Transparent",
-                    "ProgressBarTextColor": "#000000",
-
                     "ComboBoxBackgroundColor":  "#FFFFFF",
                     "LabelboxForegroundColor":  "#000000",
                     "MainForegroundColor":  "#000000",
@@ -99,10 +95,6 @@
 
                     "MicroWinLogoSize": "10",
 
-                    "ProgressBarForegroundColor": "#222222",
-                    "ProgressBarBackgroundColor": "Transparent",
-                    "ProgressBarTextColor": "#cccccc",
-
                     "ComboBoxBackgroundColor":  "#000000",
                     "LabelboxForegroundColor":  "#FFEE58",
                     "MainForegroundColor":  "#9CCC65",
@@ -170,10 +162,6 @@
                     "SettingsIconFontSize":   "18",
 
                     "MicroWinLogoSize": "10",
-
-                    "ProgressBarForegroundColor": "#222222",
-                    "ProgressBarBackgroundColor": "Transparent",
-                    "ProgressBarTextColor": "#FFFFFF",
 
                     "ComboBoxBackgroundColor":  "#000000",
                     "LabelboxForegroundColor":  "#FFEE58",

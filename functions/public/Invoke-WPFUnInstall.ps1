@@ -45,7 +45,7 @@ function Invoke-WPFUnInstall {
                     $packagesChoco.add($package)
                     Write-Host "Queueing $($package.choco) for Chocolatey Uninstall"
                 } else {
-                    $packagesWinget.add($($package.winget))
+                    $packagesWinget.add($package)
                     Write-Host "Queueing $($package.winget) for Winget Uninstall"
                 }
             }
@@ -56,11 +56,13 @@ function Invoke-WPFUnInstall {
 
             # Install all selected programs in new window
             if($packagesWinget.Count -gt 0){
-                Invoke-WinUtilWingetProgram -Action Uninstall -Programs $packagesWinget
+                Install-WinUtilProgramWinget -ProgramsToInstall $packagesWinget -Manage "Uninstalling"
             }
             if($packagesChoco.Count -gt 0){
                 Install-WinUtilProgramChoco -ProgramsToInstall $packagesChoco -Manage "Uninstalling"
             }
+
+            [System.Windows.MessageBox]::Show($Messageboxbody, $MessageboxTitle, $ButtonType, $MessageIcon)
 
             Write-Host "==========================================="
             Write-Host "--       Uninstalls have finished       ---"
