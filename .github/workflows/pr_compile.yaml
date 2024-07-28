@@ -12,8 +12,13 @@ jobs:
     - uses: actions/checkout@v4
       with:
         ref: ${{ github.head_ref }}
-    - name: Compile & Run project
+    - name: Compile project
       shell: pwsh
       run: |
-        Set-ExecutionPolicy Bypass -Scope Process -Force; ./Compile.ps1 -Run
+        Set-ExecutionPolicy Bypass -Scope Process -Force; ./Compile.ps1
       continue-on-error: false # Directly fail the job on error, removing the need for a separate check
+    - name: Run Winutil 
+      shell: pwsh
+      run: | 
+        Set-ExectionPolicy Bypass -Scope Process -Force; ./winutil.ps1
+      continue-on-error: false
