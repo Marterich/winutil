@@ -1,4 +1,4 @@
-function ConvertTo-Icon {
+function ConvertTo-Icon 
     <#
 
         .DESCRIPTION
