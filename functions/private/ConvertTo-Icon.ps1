@@ -13,7 +13,7 @@ function ConvertTo-Icon {
         The file path to write the new '.ico' resource.
 
         .PARAMETER overrideIconFile
-        An optional boolean Parameter that makes the function overridesasdfsdaf
+        An optional boolean Parameter that makes the function overrides
         the Icon File Path if the file exists. Defaults to $true.
 
         .EXAMPLE
