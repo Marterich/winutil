@@ -1,8 +1,9 @@
 name: Check and Delete winutil.ps1
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened]
+  push:
+    branches:
+      - '**'
 
 jobs:
   check-and-delete-file:
@@ -10,7 +11,9 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # Fetch all history for all branches and tags
 
     - name: Check if winutil.ps1 exists
       id: check_existence
@@ -25,5 +28,7 @@ jobs:
       if: env.winutil_exists == 'true'
       run: |
         git rm winutil.ps1
-        git commit -m "Delete winutil.ps1 as it is not allowed in PRs"
-        git push
+        git commit -m "Delete winutil.ps1 as it is not allowed"
+        git push origin HEAD:${{ github.ref }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
