@@ -1,4 +1,4 @@
-name: Check and Delete winutil.ps1
+name: Remove winutil.ps1 if included in a Push
 
 on:
   push:
@@ -11,9 +11,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
-      with:
-        fetch-depth: 0  # Fetch all history for all branches and tags
+      uses: actions/checkout@v4
 
     - name: Check if winutil.ps1 exists
       id: check_existence
