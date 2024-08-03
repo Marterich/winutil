@@ -1,4 +1,4 @@
-name: Check and Delete winutil.ps1
+name: Remove winutil.ps1 if included in a Push
 
 on:
   push:
