@@ -1,0 +1,29 @@
+name: Check and Delete winutil.ps1
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  check-and-delete-file:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Check if winutil.ps1 exists
+      id: check_existence
+      run: |
+        if [ -f "winutil.ps1" ]; then
+          echo "winutil_exists=true" >> $GITHUB_ENV
+        else
+          echo "winutil_exists=false" >> $GITHUB_ENV
+        fi
+
+    - name: Delete winutil.ps1 if it exists
+      if: env.winutil_exists == 'true'
+      run: |
+        git rm winutil.ps1
+        git commit -m "Delete winutil.ps1 as it is not allowed in PRs"
+        git push
