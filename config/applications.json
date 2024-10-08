@@ -1,5 +1,6 @@
-{
-    "1password": {
+[
+    {
+        "name":"1password",
         "category": "Utilities",
         "choco": "1password",
         "content": "1Password",
@@ -7,7 +8,8 @@
         "link": "https://1password.com/",
         "winget": "AgileBits.1Password"
     },
-    "7zip": {
+    {
+        "name":"7zip",
         "category": "Utilities",
         "choco": "7zip",
         "content": "7-Zip",
@@ -15,7 +17,8 @@
         "link": "https://www.7-zip.org/",
         "winget": "7zip.7zip"
     },
-    "adobe": {
+    {
+        "name":"adobe",
         "category": "Document",
         "choco": "adobereader",
         "content": "Adobe Acrobat Reader",
@@ -23,7 +26,8 @@
         "link": "https://www.adobe.com/acrobat/pdf-reader.html",
         "winget": "Adobe.Acrobat.Reader.64-bit"
     },
-    "advancedip": {
+    {
+        "name":"advancedip",
         "category": "Pro Tools",
         "choco": "advanced-ip-scanner",
         "content": "Advanced IP Scanner",
@@ -31,7 +35,8 @@
         "link": "https://www.advanced-ip-scanner.com/",
         "winget": "Famatech.AdvancedIPScanner"
     },
-    "affine": {
+    {
+        "name":"affine",
         "category": "Document",
         "choco": "na",
         "content": "AFFiNE",
@@ -39,7 +44,8 @@
         "link": "https://affine.pro/",
         "winget": "ToEverything.AFFiNE"
     },
-    "aimp": {
+    {
+        "name":"aimp",
         "category": "Multimedia Tools",
         "choco": "aimp",
         "content": "AIMP (Music Player)",
@@ -47,7 +53,8 @@
         "link": "https://www.aimp.ru/",
         "winget": "AIMP.AIMP"
     },
-    "alacritty": {
+    {
+        "name":"alacritty",
         "category": "Utilities",
         "choco": "alacritty",
         "content": "Alacritty Terminal",
@@ -55,7 +62,8 @@
         "link": "https://alacritty.org/",
         "winget": "Alacritty.Alacritty"
     },
-    "anaconda3": {
+    {
+        "name":"anaconda3",
         "category": "Development",
         "choco": "anaconda3",
         "content": "Anaconda",
@@ -63,7 +71,8 @@
         "link": "https://www.anaconda.com/products/distribution",
         "winget": "Anaconda.Anaconda3"
     },
-    "angryipscanner": {
+    {
+        "name":"angryipscanner",
         "category": "Pro Tools",
         "choco": "angryip",
         "content": "Angry IP Scanner",
@@ -71,7 +80,8 @@
         "link": "https://angryip.org/",
         "winget": "angryziber.AngryIPScanner"
     },
-    "anki": {
+    {
+        "name":"anki",
         "category": "Document",
         "choco": "anki",
         "content": "Anki",
@@ -79,7 +89,8 @@
         "link": "https://apps.ankiweb.net/",
         "winget": "Anki.Anki"
     },
-    "anydesk": {
+    {
+        "name":"anydesk",
         "category": "Utilities",
         "choco": "anydesk",
         "content": "AnyDesk",
@@ -87,7 +98,8 @@
         "link": "https://anydesk.com/",
         "winget": "AnyDeskSoftwareGmbH.AnyDesk"
     },
-    "audacity": {
+    {
+        "name":"audacity",
         "category": "Multimedia Tools",
         "choco": "audacity",
         "content": "Audacity",
@@ -95,7 +107,8 @@
         "link": "https://www.audacityteam.org/",
         "winget": "Audacity.Audacity"
     },
-    "autoruns": {
+    {
+        "name":"autoruns",
         "category": "Microsoft Tools",
         "choco": "autoruns",
         "content": "Autoruns",
@@ -103,7 +116,8 @@
         "link": "https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns",
         "winget": "Microsoft.Sysinternals.Autoruns"
     },
-    "rdcman": {
+    {
+        "name":"rdcman",
         "category": "Microsoft Tools",
         "choco": "rdcman",
         "content": "RDCMan",
@@ -111,7 +125,8 @@
         "link": "https://learn.microsoft.com/en-us/sysinternals/downloads/rdcman",
         "winget": "Microsoft.Sysinternals.RDCMan"
     },
-    "autohotkey": {
+    {
+        "name":"autohotkey",
         "category": "Utilities",
         "choco": "autohotkey",
         "content": "AutoHotkey",
@@ -119,7 +134,8 @@
         "link": "https://www.autohotkey.com/",
         "winget": "AutoHotkey.AutoHotkey"
     },
-    "azuredatastudio": {
+    {
+        "name":"azuredatastudio",
         "category": "Microsoft Tools",
         "choco": "azure-data-studio",
         "content": "Microsoft Azure Data Studio",
@@ -127,7 +143,8 @@
         "link": "https://docs.microsoft.com/sql/azure-data-studio/what-is-azure-data-studio",
         "winget": "Microsoft.AzureDataStudio"
     },
-    "barrier": {
+    {
+        "name":"barrier",
         "category": "Utilities",
         "choco": "barrier",
         "content": "Barrier",
@@ -135,7 +152,8 @@
         "link": "https://github.com/debauchee/barrier",
         "winget": "DebaucheeOpenSourceGroup.Barrier"
     },
-    "bat": {
+    {
+        "name":"bat",
         "category": "Utilities",
         "choco": "bat",
         "content": "Bat (Cat)",
@@ -143,7 +161,8 @@
         "link": "https://github.com/sharkdp/bat",
         "winget": "sharkdp.bat"
     },
-    "bitwarden": {
+    {
+        "name":"bitwarden",
         "category": "Utilities",
         "choco": "bitwarden",
         "content": "Bitwarden",
@@ -151,7 +170,8 @@
         "link": "https://bitwarden.com/",
         "winget": "Bitwarden.Bitwarden"
     },
-    "bleachbit": {
+    {
+        "name":"bleachbit",
         "category": "Utilities",
         "choco": "bleachbit",
         "content": "BleachBit",
@@ -159,7 +179,8 @@
         "link": "https://www.bleachbit.org/",
         "winget": "BleachBit.BleachBit"
     },
-    "blender": {
+    {
+        "name":"blender",
         "category": "Multimedia Tools",
         "choco": "blender",
         "content": "Blender (3D Graphics)",
@@ -167,7 +188,8 @@
         "link": "https://www.blender.org/",
         "winget": "BlenderFoundation.Blender"
     },
-    "brave": {
+    {
+        "name":"brave",
         "category": "Browsers",
         "choco": "brave",
         "content": "Brave",
@@ -175,7 +197,8 @@
         "link": "https://www.brave.com",
         "winget": "Brave.Brave"
     },
-    "bulkcrapuninstaller": {
+    {
+        "name":"bulkcrapuninstaller",
         "category": "Utilities",
         "choco": "bulk-crap-uninstaller",
         "content": "Bulk Crap Uninstaller",
@@ -183,7 +206,8 @@
         "link": "https://www.bcuninstaller.com/",
         "winget": "Klocman.BulkCrapUninstaller"
     },
-    "bulkrenameutility": {
+    {
+        "name":"bulkrenameutility",
         "category": "Utilities",
         "choco": "bulkrenameutility",
         "content": "Bulk Rename Utility",
@@ -191,7 +215,8 @@
         "link": "https://www.bulkrenameutility.co.uk",
         "winget": "TGRMNSoftware.BulkRenameUtility"
     },
-    "AdvancedRenamer": {
+    {
+        "name":"AdvancedRenamer",
         "category": "Utilities",
         "choco": "advanced-renamer",
         "content": "Advanced Renamer",
@@ -199,7 +224,8 @@
         "link": "https://www.advancedrenamer.com/",
         "winget": "HulubuluSoftware.AdvancedRenamer"
     },
-    "calibre": {
+    {
+        "name":"calibre",
         "category": "Document",
         "choco": "calibre",
         "content": "Calibre",
@@ -207,7 +233,8 @@
         "link": "https://calibre-ebook.com/",
         "winget": "calibre.calibre"
     },
-    "carnac": {
+    {
+        "name":"carnac",
         "category": "Utilities",
         "choco": "carnac",
         "content": "Carnac",
@@ -215,7 +242,8 @@
         "link": "https://carnackeys.com/",
         "winget": "code52.Carnac"
     },
-    "cemu": {
+    {
+        "name":"cemu",
         "category": "Games",
         "choco": "cemu",
         "content": "Cemu",
@@ -223,7 +251,8 @@
         "link": "https://cemu.info/",
         "winget": "Cemu.Cemu"
     },
-    "chatterino": {
+    {
+        "name":"chatterino",
         "category": "Communications",
         "choco": "chatterino",
         "content": "Chatterino",
@@ -231,7 +260,8 @@
         "link": "https://www.chatterino.com/",
         "winget": "ChatterinoTeam.Chatterino"
     },
-    "chrome": {
+    {
+        "name":"chrome",
         "category": "Browsers",
         "choco": "googlechrome",
         "content": "Chrome",
@@ -239,7 +269,8 @@
         "link": "https://www.google.com/chrome/",
         "winget": "Google.Chrome"
     },
-    "chromium": {
+    {
+        "name":"chromium",
         "category": "Browsers",
         "choco": "chromium",
         "content": "Chromium",
@@ -247,7 +278,8 @@
         "link": "https://github.com/Hibbiki/chromium-win64",
         "winget": "Hibbiki.Chromium"
     },
-    "arc": {
+    {
+        "name":"arc",
         "category": "Browsers",
         "choco": "na",
         "content": "Arc",
@@ -255,7 +287,8 @@
         "link": "https://arc.net/",
         "winget": "TheBrowserCompany.Arc"
     },
-    "clementine": {
+    {
+        "name":"clementine",
         "category": "Multimedia Tools",
         "choco": "clementine",
         "content": "Clementine",
@@ -263,7 +296,8 @@
         "link": "https://www.clementine-player.org/",
         "winget": "Clementine.Clementine"
     },
-    "clink": {
+    {
+        "name":"clink",
         "category": "Development",
         "choco": "clink",
         "content": "Clink",
@@ -271,7 +305,8 @@
         "link": "https://mridgers.github.io/clink/",
         "winget": "chrisant996.Clink"
     },
-    "clonehero": {
+    {
+        "name":"clonehero",
         "category": "Games",
         "choco": "na",
         "content": "Clone Hero",
@@ -279,7 +314,8 @@
         "link": "https://clonehero.net/",
         "winget": "CloneHeroTeam.CloneHero"
     },
-    "cmake": {
+    {
+        "name":"cmake",
         "category": "Development",
         "choco": "cmake",
         "content": "CMake",
@@ -287,7 +323,8 @@
         "link": "https://cmake.org/",
         "winget": "Kitware.CMake"
     },
-    "copyq": {
+    {
+        "name":"copyq",
         "category": "Utilities",
         "choco": "copyq",
         "content": "CopyQ (Clipboard Manager)",
@@ -295,7 +332,8 @@
         "link": "https://copyq.readthedocs.io/",
         "winget": "hluk.CopyQ"
     },
-    "cpuz": {
+    {
+        "name":"cpuz",
         "category": "Utilities",
         "choco": "cpu-z",
         "content": "CPU-Z",
@@ -303,7 +341,8 @@
         "link": "https://www.cpuid.com/softwares/cpu-z.html",
         "winget": "CPUID.CPU-Z"
     },
-    "crystaldiskinfo": {
+    {
+        "name":"crystaldiskinfo",
         "category": "Utilities",
         "choco": "crystaldiskinfo",
         "content": "Crystal Disk Info",
@@ -311,7 +350,8 @@
         "link": "https://crystalmark.info/en/software/crystaldiskinfo/",
         "winget": "CrystalDewWorld.CrystalDiskInfo"
     },
-    "capframex": {
+    {
+        "name":"capframex",
         "category": "Utilities",
         "choco": "na",
         "content": "CapFrameX",
@@ -319,7 +359,8 @@
         "link": "https://www.capframex.com/",
         "winget": "CXWorld.CapFrameX"
     },
-    "crystaldiskmark": {
+    {
+        "name":"crystaldiskmark",
         "category": "Utilities",
         "choco": "crystaldiskmark",
         "content": "Crystal Disk Mark",
@@ -327,7 +368,8 @@
         "link": "https://crystalmark.info/en/software/crystaldiskmark/",
         "winget": "CrystalDewWorld.CrystalDiskMark"
     },
-    "darktable": {
+    {
+        "name":"darktable",
         "category": "Multimedia Tools",
         "choco": "darktable",
         "content": "darktable",
@@ -335,7 +377,8 @@
         "link": "https://www.darktable.org/install/",
         "winget": "darktable.darktable"
     },
-    "DaxStudio": {
+    {
+        "name":"DaxStudio",
         "category": "Development",
         "choco": "daxstudio",
         "content": "DaxStudio",
@@ -343,7 +386,8 @@
         "link": "https://daxstudio.org/",
         "winget": "DaxStudio.DaxStudio"
     },
-    "ddu": {
+    {
+        "name":"ddu",
         "category": "Utilities",
         "choco": "ddu",
         "content": "Display Driver Uninstaller",
@@ -351,7 +395,8 @@
         "link": "https://www.wagnardsoft.com/display-driver-uninstaller-DDU-",
         "winget": "ddu"
     },
-    "deluge": {
+    {
+        "name":"deluge",
         "category": "Utilities",
         "choco": "deluge",
         "content": "Deluge",
@@ -359,7 +404,8 @@
         "link": "https://deluge-torrent.org/",
         "winget": "DelugeTeam.Deluge"
     },
-    "devtoys": {
+    {
+        "name":"devtoys",
         "category": "Utilities",
         "choco": "devtoys",
         "content": "DevToys",
@@ -367,7 +413,8 @@
         "link": "https://devtoys.app/",
         "winget": "DevToys-app.DevToys"
     },
-    "digikam": {
+    {
+        "name":"digikam",
         "category": "Multimedia Tools",
         "choco": "digikam",
         "content": "digiKam",
@@ -375,7 +422,8 @@
         "link": "https://www.digikam.org/",
         "winget": "KDE.digikam"
     },
-    "discord": {
+    {
+        "name":"discord",
         "category": "Communications",
         "choco": "discord",
         "content": "Discord",
@@ -383,7 +431,8 @@
         "link": "https://discord.com/",
         "winget": "Discord.Discord"
     },
-    "ditto": {
+    {
+        "name":"ditto",
         "category": "Utilities",
         "choco": "ditto",
         "content": "Ditto",
@@ -391,7 +440,8 @@
         "link": "https://github.com/sabrogden/Ditto",
         "winget": "Ditto.Ditto"
     },
-    "dockerdesktop": {
+    {
+        "name":"dockerdesktop",
         "category": "Development",
         "choco": "docker-desktop",
         "content": "Docker Desktop",
@@ -399,7 +449,8 @@
         "link": "https://www.docker.com/products/docker-desktop",
         "winget": "Docker.DockerDesktop"
     },
-    "dotnet3": {
+    {
+        "name":"dotnet3",
         "category": "Microsoft Tools",
         "choco": "dotnetcore3-desktop-runtime",
         "content": ".NET Desktop Runtime 3.1",
@@ -407,7 +458,8 @@
         "link": "https://dotnet.microsoft.com/download/dotnet/3.1",
         "winget": "Microsoft.DotNet.DesktopRuntime.3_1"
     },
-    "dotnet5": {
+    {
+        "name":"dotnet5",
         "category": "Microsoft Tools",
         "choco": "dotnet-5.0-runtime",
         "content": ".NET Desktop Runtime 5",
@@ -415,7 +467,8 @@
         "link": "https://dotnet.microsoft.com/download/dotnet/5.0",
         "winget": "Microsoft.DotNet.DesktopRuntime.5"
     },
-    "dotnet6": {
+    {
+        "name":"dotnet6",
         "category": "Microsoft Tools",
         "choco": "dotnet-6.0-runtime",
         "content": ".NET Desktop Runtime 6",
@@ -423,7 +476,8 @@
         "link": "https://dotnet.microsoft.com/download/dotnet/6.0",
         "winget": "Microsoft.DotNet.DesktopRuntime.6"
     },
-    "dotnet7": {
+    {
+        "name":"dotnet7",
         "category": "Microsoft Tools",
         "choco": "dotnet-7.0-runtime",
         "content": ".NET Desktop Runtime 7",
@@ -431,7 +485,8 @@
         "link": "https://dotnet.microsoft.com/download/dotnet/7.0",
         "winget": "Microsoft.DotNet.DesktopRuntime.7"
     },
-    "dotnet8": {
+    {
+        "name":"dotnet8",
         "category": "Microsoft Tools",
         "choco": "dotnet-8.0-runtime",
         "content": ".NET Desktop Runtime 8",
@@ -439,7 +494,8 @@
         "link": "https://dotnet.microsoft.com/download/dotnet/8.0",
         "winget": "Microsoft.DotNet.DesktopRuntime.8"
     },
-    "dmt": {
+    {
+        "name":"dmt",
         "winget": "GNE.DualMonitorTools",
         "choco": "dual-monitor-tools",
         "category": "Utilities",
@@ -447,7 +503,8 @@
         "link": "https://dualmonitortool.sourceforge.net/",
         "description": "Dual Monitor Tools (DMT) is a FOSS app that customize handling multiple monitors and even lock the mouse on specific monitor. Useful for full screen games and apps that does not handle well a second monitor or helps the workflow."
     },
-    "duplicati": {
+    {
+        "name":"duplicati",
         "category": "Utilities",
         "choco": "duplicati",
         "content": "Duplicati",
@@ -455,7 +512,8 @@
         "link": "https://www.duplicati.com/",
         "winget": "Duplicati.Duplicati"
     },
-    "eaapp": {
+    {
+        "name":"eaapp",
         "category": "Games",
         "choco": "ea-app",
         "content": "EA App",
@@ -463,7 +521,8 @@
         "link": "https://www.ea.com/ea-app",
         "winget": "ElectronicArts.EADesktop"
     },
-    "eartrumpet": {
+    {
+        "name":"eartrumpet",
         "category": "Multimedia Tools",
         "choco": "eartrumpet",
         "content": "EarTrumpet (Audio)",
@@ -471,7 +530,8 @@
         "link": "https://eartrumpet.app/",
         "winget": "File-New-Project.EarTrumpet"
     },
-    "edge": {
+    {
+        "name":"edge",
         "category": "Browsers",
         "choco": "microsoft-edge",
         "content": "Edge",
@@ -479,7 +539,8 @@
         "link": "https://www.microsoft.com/edge",
         "winget": "Microsoft.Edge"
     },
-    "efibooteditor": {
+    {
+        "name":"efibooteditor",
         "category": "Pro Tools",
         "choco": "na",
         "content": "EFI Boot Editor",
@@ -487,7 +548,8 @@
         "link": "https://www.easyuefi.com/",
         "winget": "EFIBootEditor.EFIBootEditor"
     },
-    "emulationstation": {
+    {
+        "name":"emulationstation",
         "category": "Games",
         "choco": "emulationstation",
         "content": "Emulation Station",
@@ -495,7 +557,8 @@
         "link": "https://emulationstation.org/",
         "winget": "Emulationstation.Emulationstation"
     },
-    "epicgames": {
+    {
+        "name":"epicgames",
         "category": "Games",
         "choco": "epicgameslauncher",
         "content": "Epic Games Launcher",
@@ -503,7 +566,8 @@
         "link": "https://www.epicgames.com/store/en-US/",
         "winget": "EpicGames.EpicGamesLauncher"
     },
-    "esearch": {
+    {
+        "name":"esearch",
         "category": "Utilities",
         "choco": "everything",
         "content": "Everything Search",
@@ -511,7 +575,8 @@
         "link": "https://www.voidtools.com/",
         "winget": "voidtools.Everything"
     },
-    "espanso": {
+    {
+        "name":"espanso",
         "category": "Utilities",
         "choco": "espanso",
         "content": "Espanso",
@@ -519,7 +584,8 @@
         "link": "https://espanso.org/",
         "winget": "Espanso.Espanso"
     },
-    "etcher": {
+    {
+        "name":"etcher",
         "category": "Utilities",
         "choco": "etcher",
         "content": "Etcher USB Creator",
@@ -527,7 +593,8 @@
         "link": "https://www.balena.io/etcher/",
         "winget": "Balena.Etcher"
     },
-    "falkon": {
+    {
+        "name":"falkon",
         "category": "Browsers",
         "choco": "falkon",
         "content": "Falkon",
@@ -535,7 +602,8 @@
         "link": "https://www.falkon.org/",
         "winget": "KDE.Falkon"
     },
-    "fastfetch": {
+    {
+        "name":"fastfetch",
         "category": "Utilities",
         "choco": "na",
         "content": "Fastfetch",
@@ -543,7 +611,8 @@
         "link": "https://github.com/fastfetch-cli/fastfetch/",
         "winget": "Fastfetch-cli.Fastfetch"
     },
-    "ferdium": {
+    {
+        "name":"ferdium",
         "category": "Communications",
         "choco": "ferdium",
         "content": "Ferdium",
@@ -551,7 +620,8 @@
         "link": "https://ferdium.org/",
         "winget": "Ferdium.Ferdium"
     },
-    "ffmpeg": {
+    {
+        "name":"ffmpeg",
         "category": "Multimedia Tools",
         "choco": "ffmpeg-full",
         "content": "FFmpeg (full)",
@@ -559,7 +629,8 @@
         "link": "https://ffmpeg.org/",
         "winget": "Gyan.FFmpeg"
     },
-    "fileconverter": {
+    {
+        "name":"fileconverter",
         "category": "Utilities",
         "choco": "file-converter",
         "content": "File-Converter",
@@ -567,7 +638,8 @@
         "link": "https://file-converter.io/",
         "winget": "AdrienAllard.FileConverter"
     },
-    "files": {
+    {
+        "name":"files",
         "category": "Utilities",
         "choco": "files",
         "content": "Files",
@@ -575,7 +647,8 @@
         "link": "https://github.com/files-community/Files",
         "winget": "na"
     },
-    "firealpaca": {
+    {
+        "name":"firealpaca",
         "category": "Multimedia Tools",
         "choco": "firealpaca",
         "content": "Fire Alpaca",
@@ -583,7 +656,8 @@
         "link": "https://firealpaca.com/",
         "winget": "FireAlpaca.FireAlpaca"
     },
-    "firefox": {
+    {
+        "name":"firefox",
         "category": "Browsers",
         "choco": "firefox",
         "content": "Firefox",
@@ -591,7 +665,8 @@
         "link": "https://www.mozilla.org/en-US/firefox/new/",
         "winget": "Mozilla.Firefox"
     },
-    "firefoxesr": {
+    {
+        "name":"firefoxesr",
         "category": "Browsers",
         "choco": "FirefoxESR",
         "content": "Firefox ESR",
@@ -599,7 +674,8 @@
         "link": "https://www.mozilla.org/en-US/firefox/enterprise/",
         "winget": "Mozilla.Firefox.ESR"
     },
-    "flameshot": {
+    {
+        "name":"flameshot",
         "category": "Multimedia Tools",
         "choco": "flameshot",
         "content": "Flameshot (Screenshots)",
@@ -607,7 +683,8 @@
         "link": "https://flameshot.org/",
         "winget": "Flameshot.Flameshot"
     },
-    "lightshot": {
+    {
+        "name":"lightshot",
         "category": "Multimedia Tools",
         "choco": "lightshot",
         "content": "Lightshot (Screenshots)",
@@ -615,7 +692,8 @@
         "link": "https://app.prntscr.com/",
         "winget": "Skillbrains.Lightshot"
     },
-    "floorp": {
+    {
+        "name":"floorp",
         "category": "Browsers",
         "choco": "na",
         "content": "Floorp",
@@ -623,7 +701,8 @@
         "link": "https://floorp.app/",
         "winget": "Ablaze.Floorp"
     },
-    "flow": {
+    {
+        "name":"flow",
         "category": "Utilities",
         "choco": "flow-launcher",
         "content": "Flow launcher",
@@ -631,7 +710,8 @@
         "link": "https://www.flowlauncher.com/",
         "winget": "Flow-Launcher.Flow-Launcher"
     },
-    "flux": {
+    {
+        "name":"flux",
         "category": "Utilities",
         "choco": "flux",
         "content": "F.lux",
@@ -639,7 +719,8 @@
         "link": "https://justgetflux.com/",
         "winget": "flux.flux"
     },
-    "foobar": {
+    {
+        "name":"foobar",
         "category": "Multimedia Tools",
         "choco": "foobar2000",
         "content": "foobar2000 (Music Player)",
@@ -647,7 +728,8 @@
         "link": "https://www.foobar2000.org/",
         "winget": "PeterPawlowski.foobar2000"
     },
-    "foxpdfeditor": {
+    {
+        "name":"foxpdfeditor",
         "category": "Document",
         "choco": "na",
         "content": "Foxit PDF Editor",
@@ -655,7 +737,8 @@
         "link": "https://www.foxit.com/pdf-editor/",
         "winget": "Foxit.PhantomPDF"
     },
-    "foxpdfreader": {
+    {
+        "name":"foxpdfreader",
         "category": "Document",
         "choco": "foxitreader",
         "content": "Foxit PDF Reader",
@@ -663,7 +746,8 @@
         "link": "https://www.foxit.com/pdf-reader/",
         "winget": "Foxit.FoxitReader"
     },
-    "freecad": {
+    {
+        "name":"freecad",
         "category": "Multimedia Tools",
         "choco": "freecad",
         "content": "FreeCAD",
@@ -671,7 +755,8 @@
         "link": "https://www.freecadweb.org/",
         "winget": "FreeCAD.FreeCAD"
     },
-    "fxsound": {
+    {
+        "name":"fxsound",
         "category": "Multimedia Tools",
         "choco": "fxsound",
         "content": "FxSound",
@@ -679,7 +764,8 @@
         "link": "https://www.fxsound.com/",
         "winget": "FxSoundLLC.FxSound"
     },
-    "fzf": {
+    {
+        "name":"fzf",
         "category": "Utilities",
         "choco": "fzf",
         "content": "Fzf",
@@ -687,7 +773,8 @@
         "link": "https://github.com/junegunn/fzf/",
         "winget": "junegunn.fzf"
     },
-    "geforcenow": {
+    {
+        "name":"geforcenow",
         "category": "Games",
         "choco": "nvidia-geforce-now",
         "content": "GeForce NOW",
@@ -695,7 +782,8 @@
         "link": "https://www.nvidia.com/en-us/geforce-now/",
         "winget": "Nvidia.GeForceNow"
     },
-    "gimp": {
+    {
+        "name":"gimp",
         "category": "Multimedia Tools",
         "choco": "gimp",
         "content": "GIMP (Image Editor)",
@@ -703,7 +791,8 @@
         "link": "https://www.gimp.org/",
         "winget": "GIMP.GIMP"
     },
-    "git": {
+    {
+        "name":"git",
         "category": "Development",
         "choco": "git",
         "content": "Git",
@@ -711,7 +800,8 @@
         "link": "https://git-scm.com/",
         "winget": "Git.Git"
     },
-    "gitbutler": {
+    {
+        "name":"gitbutler",
         "category": "Development",
         "choco": "na",
         "content": "Git Butler",
@@ -719,7 +809,8 @@
         "link": "https://gitbutler.com/",
         "winget": "GitButler.GitButler"
     },
-    "gitextensions": {
+    {
+        "name":"gitextensions",
         "category": "Development",
         "choco": "git;gitextensions",
         "content": "Git Extensions",
@@ -727,7 +818,8 @@
         "link": "https://gitextensions.github.io/",
         "winget": "GitExtensionsTeam.GitExtensions"
     },
-    "githubcli": {
+    {
+        "name":"githubcli",
         "category": "Development",
         "choco": "git;gh",
         "content": "GitHub CLI",
@@ -735,7 +827,8 @@
         "link": "https://cli.github.com/",
         "winget": "GitHub.cli"
     },
-    "githubdesktop": {
+    {
+        "name":"githubdesktop",
         "category": "Development",
         "choco": "git;github-desktop",
         "content": "GitHub Desktop",
@@ -743,7 +836,8 @@
         "link": "https://desktop.github.com/",
         "winget": "GitHub.GitHubDesktop"
     },
-    "gitkrakenclient": {
+    {
+        "name":"gitkrakenclient",
         "category": "Development",
         "choco": "gitkraken",
         "content": "GitKraken Client",
@@ -751,7 +845,8 @@
         "link": "https://www.gitkraken.com/git-client",
         "winget": "Axosoft.GitKraken"
     },
-    "glaryutilities": {
+    {
+        "name":"glaryutilities",
         "category": "Utilities",
         "choco": "glaryutilities-free",
         "content": "Glary Utilities",
@@ -759,7 +854,8 @@
         "link": "https://www.glarysoft.com/glary-utilities/",
         "winget": "Glarysoft.GlaryUtilities"
     },
-    "godotengine": {
+    {
+        "name":"godotengine",
         "category": "Development",
         "choco": "godot",
         "content": "Godot Engine",
@@ -767,7 +863,8 @@
         "link": "https://godotengine.org/",
         "winget": "GodotEngine.GodotEngine"
     },
-    "gog": {
+    {
+        "name":"gog",
         "category": "Games",
         "choco": "goggalaxy",
         "content": "GOG Galaxy",
@@ -775,7 +872,8 @@
         "link": "https://www.gog.com/galaxy",
         "winget": "GOG.Galaxy"
     },
-    "gitify": {
+    {
+        "name":"gitify",
         "category": "Development",
         "choco": "na",
         "content": "Gitify",
@@ -783,7 +881,8 @@
         "link": "https://www.gitify.io/",
         "winget": "Gitify.Gitify"
     },
-    "golang": {
+    {
+        "name":"golang",
         "category": "Development",
         "choco": "golang",
         "content": "Go",
@@ -791,7 +890,8 @@
         "link": "https://go.dev/",
         "winget": "GoLang.Go"
     },
-    "googledrive": {
+    {
+        "name":"googledrive",
         "category": "Utilities",
         "choco": "googledrive",
         "content": "Google Drive",
@@ -799,7 +899,8 @@
         "link": "https://www.google.com/drive/",
         "winget": "Google.GoogleDrive"
     },
-    "gpuz": {
+    {
+        "name":"gpuz",
         "category": "Utilities",
         "choco": "gpu-z",
         "content": "GPU-Z",
@@ -807,7 +908,8 @@
         "link": "https://www.techpowerup.com/gpuz/",
         "winget": "TechPowerUp.GPU-Z"
     },
-    "greenshot": {
+    {
+        "name":"greenshot",
         "category": "Multimedia Tools",
         "choco": "greenshot",
         "content": "Greenshot (Screenshots)",
@@ -815,7 +917,8 @@
         "link": "https://getgreenshot.org/",
         "winget": "Greenshot.Greenshot"
     },
-    "gsudo": {
+    {
+        "name":"gsudo",
         "category": "Utilities",
         "choco": "gsudo",
         "content": "Gsudo",
@@ -823,7 +926,8 @@
         "link": "https://gerardog.github.io/gsudo/",
         "winget": "gerardog.gsudo"
     },
-    "guilded": {
+    {
+        "name":"guilded",
         "category": "Communications",
         "choco": "na",
         "content": "Guilded",
@@ -831,7 +935,8 @@
         "link": "https://www.guilded.gg/",
         "winget": "Guilded.Guilded"
     },
-    "handbrake": {
+    {
+        "name":"handbrake",
         "category": "Multimedia Tools",
         "choco": "handbrake",
         "content": "HandBrake",
@@ -839,7 +944,8 @@
         "link": "https://handbrake.fr/",
         "winget": "HandBrake.HandBrake"
     },
-    "harmonoid": {
+    {
+        "name":"harmonoid",
         "category": "Multimedia Tools",
         "choco": "na",
         "content": "Harmonoid",
@@ -847,7 +953,8 @@
         "link": "https://harmonoid.com/",
         "winget": "Harmonoid.Harmonoid"
     },
-    "heidisql": {
+    {
+        "name":"heidisql",
         "category": "Pro Tools",
         "choco": "heidisql",
         "content": "HeidiSQL",
@@ -855,7 +962,8 @@
         "link": "https://www.heidisql.com/",
         "winget": "HeidiSQL.HeidiSQL"
     },
-    "helix": {
+    {
+        "name":"helix",
         "category": "Development",
         "choco": "helix",
         "content": "Helix",
@@ -863,7 +971,8 @@
         "link": "https://helix-editor.com/",
         "winget": "Helix.Helix"
     },
-    "heroiclauncher": {
+    {
+        "name":"heroiclauncher",
         "category": "Games",
         "choco": "na",
         "content": "Heroic Games Launcher",
@@ -871,7 +980,8 @@
         "link": "https://heroicgameslauncher.com/",
         "winget": "HeroicGamesLauncher.HeroicGamesLauncher"
     },
-    "hexchat": {
+    {
+        "name":"hexchat",
         "category": "Communications",
         "choco": "hexchat",
         "content": "Hexchat",
@@ -879,7 +989,8 @@
         "link": "https://hexchat.github.io/",
         "winget": "HexChat.HexChat"
     },
-    "hwinfo": {
+    {
+        "name":"hwinfo",
         "category": "Utilities",
         "choco": "hwinfo",
         "content": "HWiNFO",
@@ -887,7 +998,8 @@
         "link": "https://www.hwinfo.com/",
         "winget": "REALiX.HWiNFO"
     },
-    "hwmonitor": {
+    {
+        "name":"hwmonitor",
         "category": "Utilities",
         "choco": "hwmonitor",
         "content": "HWMonitor",
@@ -895,7 +1007,8 @@
         "link": "https://www.cpuid.com/softwares/hwmonitor.html",
         "winget": "CPUID.HWMonitor"
     },
-    "imageglass": {
+    {
+        "name":"imageglass",
         "category": "Multimedia Tools",
         "choco": "imageglass",
         "content": "ImageGlass (Image Viewer)",
@@ -903,7 +1016,8 @@
         "link": "https://imageglass.org/",
         "winget": "DuongDieuPhap.ImageGlass"
     },
-    "imgburn": {
+    {
+        "name":"imgburn",
         "category": "Multimedia Tools",
         "choco": "imgburn",
         "content": "ImgBurn",
@@ -911,7 +1025,8 @@
         "link": "http://www.imgburn.com/",
         "winget": "LIGHTNINGUK.ImgBurn"
     },
-    "inkscape": {
+    {
+        "name":"inkscape",
         "category": "Multimedia Tools",
         "choco": "inkscape",
         "content": "Inkscape",
@@ -919,7 +1034,8 @@
         "link": "https://inkscape.org/",
         "winget": "Inkscape.Inkscape"
     },
-    "itch": {
+    {
+        "name":"itch",
         "category": "Games",
         "choco": "itch",
         "content": "Itch.io",
@@ -927,7 +1043,8 @@
         "link": "https://itch.io/",
         "winget": "ItchIo.Itch"
     },
-    "itunes": {
+    {
+        "name":"itunes",
         "category": "Multimedia Tools",
         "choco": "itunes",
         "content": "iTunes",
@@ -935,7 +1052,8 @@
         "link": "https://www.apple.com/itunes/",
         "winget": "Apple.iTunes"
     },
-    "jami": {
+    {
+        "name":"jami",
         "category": "Communications",
         "choco": "jami",
         "content": "Jami",
@@ -943,7 +1061,8 @@
         "link": "https://jami.net/",
         "winget": "SFLinux.Jami"
     },
-    "java8": {
+    {
+        "name":"java8",
         "category": "Development",
         "choco": "corretto8jdk",
         "content": "Amazon Corretto 8 (LTS)",
@@ -951,7 +1070,8 @@
         "link": "https://aws.amazon.com/corretto",
         "winget": "Amazon.Corretto.8.JDK"
     },
-    "java11": {
+    {
+        "name":"java11",
         "category": "Development",
         "choco": "corretto11jdk",
         "content": "Amazon Corretto 11 (LTS)",
@@ -959,7 +1079,8 @@
         "link": "https://aws.amazon.com/corretto",
         "winget": "Amazon.Corretto.11.JDK"
     },
-    "java17": {
+    {
+        "name":"java17",
         "category": "Development",
         "choco": "corretto17jdk",
         "content": "Amazon Corretto 17 (LTS)",
@@ -967,7 +1088,8 @@
         "link": "https://aws.amazon.com/corretto",
         "winget": "Amazon.Corretto.17.JDK"
     },
-    "java21": {
+    {
+        "name":"java21",
         "category": "Development",
         "choco": "corretto21jdk",
         "content": "Amazon Corretto 21 (LTS)",
@@ -975,7 +1097,8 @@
         "link": "https://aws.amazon.com/corretto",
         "winget": "Amazon.Corretto.21.JDK"
     },
-    "jdownloader": {
+    {
+        "name":"jdownloader",
         "category": "Utilities",
         "choco": "jdownloader",
         "content": "JDownloader",
@@ -983,7 +1106,8 @@
         "link": "http://jdownloader.org/",
         "winget": "AppWork.JDownloader"
     },
-    "jellyfinmediaplayer": {
+    {
+        "name":"jellyfinmediaplayer",
         "category": "Multimedia Tools",
         "choco": "jellyfin-media-player",
         "content": "Jellyfin Media Player",
@@ -991,7 +1115,8 @@
         "link": "https://github.com/jellyfin/jellyfin-media-player",
         "winget": "Jellyfin.JellyfinMediaPlayer"
     },
-    "jellyfinserver": {
+    {
+        "name":"jellyfinserver",
         "category": "Multimedia Tools",
         "choco": "jellyfin",
         "content": "Jellyfin Server",
@@ -999,7 +1124,8 @@
         "link": "https://jellyfin.org/",
         "winget": "Jellyfin.Server"
     },
-    "jetbrains": {
+    {
+        "name":"jetbrains",
         "category": "Development",
         "choco": "jetbrainstoolbox",
         "content": "Jetbrains Toolbox",
@@ -1007,7 +1133,8 @@
         "link": "https://www.jetbrains.com/toolbox/",
         "winget": "JetBrains.Toolbox"
     },
-    "joplin": {
+    {
+        "name":"joplin",
         "category": "Document",
         "choco": "joplin",
         "content": "Joplin (FOSS Notes)",
@@ -1015,7 +1142,8 @@
         "link": "https://joplinapp.org/",
         "winget": "Joplin.Joplin"
     },
-    "jpegview": {
+    {
+        "name":"jpegview",
         "category": "Utilities",
         "choco": "jpegview",
         "content": "JPEG View",
@@ -1023,7 +1151,8 @@
         "link": "https://github.com/sylikc/jpegview",
         "winget": "sylikc.JPEGView"
     },
-    "kdeconnect": {
+    {
+        "name":"kdeconnect",
         "category": "Utilities",
         "choco": "kdeconnect-kde",
         "content": "KDE Connect",
@@ -1031,7 +1160,8 @@
         "link": "https://community.kde.org/KDEConnect",
         "winget": "KDE.KDEConnect"
     },
-    "kdenlive": {
+    {
+        "name":"kdenlive",
         "category": "Multimedia Tools",
         "choco": "kdenlive",
         "content": "Kdenlive (Video Editor)",
@@ -1039,7 +1169,8 @@
         "link": "https://kdenlive.org/",
         "winget": "KDE.Kdenlive"
     },
-    "keepass": {
+    {
+        "name":"keepass",
         "category": "Utilities",
         "choco": "keepassxc",
         "content": "KeePassXC",
@@ -1047,7 +1178,8 @@
         "link": "https://keepassxc.org/",
         "winget": "KeePassXCTeam.KeePassXC"
     },
-    "klite": {
+    {
+        "name":"klite",
         "category": "Multimedia Tools",
         "choco": "k-litecodecpack-standard",
         "content": "K-Lite Codec Standard",
@@ -1055,7 +1187,8 @@
         "link": "https://www.codecguide.com/",
         "winget": "CodecGuide.K-LiteCodecPack.Standard"
     },
-    "kodi": {
+    {
+        "name":"kodi",
         "category": "Multimedia Tools",
         "choco": "kodi",
         "content": "Kodi Media Center",
@@ -1063,7 +1196,8 @@
         "link": "https://kodi.tv/",
         "winget": "XBMCFoundation.Kodi"
     },
-    "krita": {
+    {
+        "name":"krita",
         "category": "Multimedia Tools",
         "choco": "krita",
         "content": "Krita (Image Editor)",
@@ -1071,7 +1205,8 @@
         "link": "https://krita.org/en/features/",
         "winget": "KDE.Krita"
     },
-    "lazygit": {
+    {
+        "name":"lazygit",
         "category": "Development",
         "choco": "lazygit",
         "content": "Lazygit",
@@ -1079,7 +1214,8 @@
         "link": "https://github.com/jesseduffield/lazygit/",
         "winget": "JesseDuffield.lazygit"
     },
-    "libreoffice": {
+    {
+        "name":"libreoffice",
         "category": "Document",
         "choco": "libreoffice-fresh",
         "content": "LibreOffice",
@@ -1087,7 +1223,8 @@
         "link": "https://www.libreoffice.org/",
         "winget": "TheDocumentFoundation.LibreOffice"
     },
-    "librewolf": {
+    {
+        "name":"librewolf",
         "category": "Browsers",
         "choco": "librewolf",
         "content": "LibreWolf",
@@ -1095,7 +1232,8 @@
         "link": "https://librewolf-community.gitlab.io/",
         "winget": "LibreWolf.LibreWolf"
     },
-    "linkshellextension": {
+    {
+        "name":"linkshellextension",
         "category": "Utilities",
         "choco": "linkshellextension",
         "content": "Link Shell extension",
@@ -1103,7 +1241,8 @@
         "link": "https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html",
         "winget": "HermannSchinagl.LinkShellExtension"
     },
-    "linphone": {
+    {
+        "name":"linphone",
         "category": "Communications",
         "choco": "linphone",
         "content": "Linphone",
@@ -1111,7 +1250,8 @@
         "link": "https://www.linphone.org/",
         "winget": "BelledonneCommunications.Linphone"
     },
-    "livelywallpaper": {
+    {
+        "name":"livelywallpaper",
         "category": "Utilities",
         "choco": "lively",
         "content": "Lively Wallpaper",
@@ -1119,7 +1259,8 @@
         "link": "https://www.rocksdanister.com/lively/",
         "winget": "rocksdanister.LivelyWallpaper"
     },
-    "localsend": {
+    {
+        "name":"localsend",
         "category": "Utilities",
         "choco": "localsend.install",
         "content": "LocalSend",
@@ -1127,7 +1268,8 @@
         "link": "https://localsend.org/",
         "winget": "LocalSend.LocalSend"
     },
-    "lockhunter": {
+    {
+        "name":"lockhunter",
         "category": "Utilities",
         "choco": "lockhunter",
         "content": "LockHunter",
@@ -1135,7 +1277,8 @@
         "link": "https://lockhunter.com/",
         "winget": "CrystalRich.LockHunter"
     },
-    "logseq": {
+    {
+        "name":"logseq",
         "category": "Document",
         "choco": "logseq",
         "content": "Logseq",
@@ -1143,7 +1286,8 @@
         "link": "https://logseq.com/",
         "winget": "Logseq.Logseq"
     },
-    "malwarebytes": {
+    {
+        "name":"malwarebytes",
         "category": "Utilities",
         "choco": "malwarebytes",
         "content": "Malwarebytes",
@@ -1151,7 +1295,8 @@
         "link": "https://www.malwarebytes.com/",
         "winget": "Malwarebytes.Malwarebytes"
     },
-    "masscode": {
+    {
+        "name":"masscode",
         "category": "Document",
         "choco": "na",
         "content": "massCode (Snippet Manager)",
@@ -1159,7 +1304,8 @@
         "link": "https://masscode.io/",
         "winget": "antonreshetov.massCode"
     },
-    "matrix": {
+    {
+        "name":"matrix",
         "category": "Communications",
         "choco": "element-desktop",
         "content": "Element",
@@ -1167,7 +1313,8 @@
         "link": "https://element.io/",
         "winget": "Element.Element"
     },
-    "meld": {
+    {
+        "name":"meld",
         "category": "Utilities",
         "choco": "meld",
         "content": "Meld",
@@ -1175,7 +1322,8 @@
         "link": "https://meldmerge.org/",
         "winget": "Meld.Meld"
     },
-    "ModernFlyouts": {
+    {
+        "name":"ModernFlyouts",
         "category": "Multimedia Tools",
         "choco": "na",
         "content": "Modern Flyouts",
@@ -1183,7 +1331,8 @@
         "link": "https://github.com/ModernFlyouts-Community/ModernFlyouts/",
         "winget": "ModernFlyouts.ModernFlyouts"
     },
-    "monitorian": {
+    {
+        "name":"monitorian",
         "category": "Utilities",
         "choco": "monitorian",
         "content": "Monitorian",
@@ -1191,7 +1340,8 @@
         "link": "https://github.com/emoacht/Monitorian",
         "winget": "emoacht.Monitorian"
     },
-    "moonlight": {
+    {
+        "name":"moonlight",
         "category": "Games",
         "choco": "moonlight-qt",
         "content": "Moonlight/GameStream Client",
@@ -1199,7 +1349,8 @@
         "link": "https://moonlight-stream.org/",
         "winget": "MoonlightGameStreamingProject.Moonlight"
     },
-    "Motrix": {
+    {
+        "name":"Motrix",
         "category": "Utilities",
         "choco": "motrix",
         "content": "Motrix Download Manager",
@@ -1207,7 +1358,8 @@
         "link": "https://motrix.app/",
         "winget": "agalwood.Motrix"
     },
-    "mpchc": {
+    {
+        "name":"mpchc",
         "category": "Multimedia Tools",
         "choco": "mpc-hc-clsid2",
         "content": "Media Player Classic - Home Cinema",
@@ -1215,7 +1367,8 @@
         "link": "https://github.com/clsid2/mpc-hc/",
         "winget": "clsid2.mpc-hc"
     },
-    "mremoteng": {
+    {
+        "name":"mremoteng",
         "category": "Pro Tools",
         "choco": "mremoteng",
         "content": "mRemoteNG",
@@ -1223,7 +1376,8 @@
         "link": "https://mremoteng.org/",
         "winget": "mRemoteNG.mRemoteNG"
     },
-    "msedgeredirect": {
+    {
+        "name":"msedgeredirect",
         "category": "Utilities",
         "choco": "msedgeredirect",
         "content": "MSEdgeRedirect",
@@ -1231,7 +1385,8 @@
         "link": "https://github.com/rcmaehl/MSEdgeRedirect",
         "winget": "rcmaehl.MSEdgeRedirect"
     },
-    "msiafterburner": {
+    {
+        "name":"msiafterburner",
         "category": "Utilities",
         "choco": "msiafterburner",
         "content": "MSI Afterburner",
@@ -1239,7 +1394,8 @@
         "link": "https://www.msi.com/Landing/afterburner",
         "winget": "Guru3D.Afterburner"
     },
-    "mullvadvpn": {
+    {
+        "name":"mullvadvpn",
         "category": "Pro Tools",
         "choco": "mullvad-app",
         "content": "Mullvad VPN",
@@ -1247,7 +1403,8 @@
         "link": "https://github.com/mullvad/mullvadvpn-app",
         "winget": "MullvadVPN.MullvadVPN"
     },
-    "BorderlessGaming": {
+    {
+        "name":"BorderlessGaming",
         "category": "Utilities",
         "choco": "borderlessgaming",
         "content": "Borderless Gaming",
@@ -1255,7 +1412,8 @@
         "link": "https://github.com/Codeusa/Borderless-Gaming",
         "winget": "Codeusa.BorderlessGaming"
     },
-    "EqualizerAPO": {
+    {
+        "name":"EqualizerAPO",
         "category": "Multimedia Tools",
         "choco": "equalizerapo",
         "content": "Equalizer APO",
@@ -1263,7 +1421,8 @@
         "link": "https://sourceforge.net/projects/equalizerapo",
         "winget": "na"
     },
-    "CompactGUI": {
+    {
+        "name":"CompactGUI",
         "category": "Utilities",
         "choco": "compactgui",
         "content": "Compact GUI",
@@ -1271,7 +1430,8 @@
         "link": "https://github.com/IridiumIO/CompactGUI",
         "winget": "IridiumIO.CompactGUI"
     },
-    "ExifCleaner": {
+    {
+        "name":"ExifCleaner",
         "category": "Utilities",
         "choco": "na",
         "content": "ExifCleaner",
@@ -1279,7 +1439,8 @@
         "link": "https://github.com/szTheory/exifcleaner",
         "winget": "szTheory.exifcleaner"
     },
-    "mullvadbrowser": {
+    {
+        "name":"mullvadbrowser",
         "category": "Browsers",
         "choco": "na",
         "content": "Mullvad Browser",
@@ -1287,7 +1448,8 @@
         "link": "https://mullvad.net/browser",
         "winget": "MullvadVPN.MullvadBrowser"
     },
-    "musescore": {
+    {
+        "name":"musescore",
         "category": "Multimedia Tools",
         "choco": "musescore",
         "content": "MuseScore",
@@ -1295,7 +1457,8 @@
         "link": "https://musescore.org/en",
         "winget": "Musescore.Musescore"
     },
-    "musicbee": {
+    {
+        "name":"musicbee",
         "category": "Multimedia Tools",
         "choco": "musicbee",
         "content": "MusicBee (Music Player)",
@@ -1303,7 +1466,8 @@
         "link": "https://getmusicbee.com/",
         "winget": "MusicBee.MusicBee"
     },
-    "mp3tag": {
+    {
+        "name":"mp3tag",
         "category": "Multimedia Tools",
         "choco": "mp3tag",
         "content": "Mp3tag (Metadata Audio Editor)",
@@ -1311,7 +1475,8 @@
         "link": "https://www.mp3tag.de/en/",
         "winget": "Mp3tag.Mp3tag"
     },
-    "tagscanner": {
+    {
+        "name":"tagscanner",
         "category": "Multimedia Tools",
         "choco": "tagscanner",
         "content": "TagScanner (Tag Scanner)",
@@ -1319,7 +1484,8 @@
         "link": "https://www.xdlab.ru/en/",
         "winget": "SergeySerkov.TagScanner"
     },
-    "nanazip": {
+    {
+        "name":"nanazip",
         "category": "Utilities",
         "choco": "nanazip",
         "content": "NanaZip",
@@ -1327,7 +1493,8 @@
         "link": "https://github.com/M2Team/NanaZip",
         "winget": "M2Team.NanaZip"
     },
-    "netbird": {
+    {
+        "name":"netbird",
         "category": "Pro Tools",
         "choco": "netbird",
         "content": "NetBird",
@@ -1335,7 +1502,8 @@
         "link": "https://netbird.io/",
         "winget": "netbird"
     },
-    "naps2": {
+    {
+        "name":"naps2",
         "category": "Document",
         "choco": "naps2",
         "content": "NAPS2 (Document Scanner)",
@@ -1343,7 +1511,8 @@
         "link": "https://www.naps2.com/",
         "winget": "Cyanfish.NAPS2"
     },
-    "neofetchwin": {
+    {
+        "name":"neofetchwin",
         "category": "Utilities",
         "choco": "na",
         "content": "Neofetch",
@@ -1351,7 +1520,8 @@
         "link": "https://github.com/nepnep39/neofetch-win",
         "winget": "nepnep.neofetch-win"
     },
-    "neovim": {
+    {
+        "name":"neovim",
         "category": "Development",
         "choco": "neovim",
         "content": "Neovim",
@@ -1359,7 +1529,8 @@
         "link": "https://neovim.io/",
         "winget": "Neovim.Neovim"
     },
-    "nextclouddesktop": {
+    {
+        "name":"nextclouddesktop",
         "category": "Utilities",
         "choco": "nextcloud-client",
         "content": "Nextcloud Desktop",
@@ -1367,7 +1538,8 @@
         "link": "https://nextcloud.com/install/#install-clients",
         "winget": "Nextcloud.NextcloudDesktop"
     },
-    "nglide": {
+    {
+        "name":"nglide",
         "category": "Multimedia Tools",
         "choco": "na",
         "content": "nGlide (3dfx compatibility)",
@@ -1375,7 +1547,8 @@
         "link": "http://www.zeus-software.com/downloads/nglide",
         "winget": "ZeusSoftware.nGlide"
     },
-    "nmap": {
+    {
+        "name":"nmap",
         "category": "Pro Tools",
         "choco": "nmap",
         "content": "Nmap",
@@ -1383,7 +1556,8 @@
         "link": "https://nmap.org/",
         "winget": "Insecure.Nmap"
     },
-    "nodejs": {
+    {
+        "name":"nodejs",
         "category": "Development",
         "choco": "nodejs",
         "content": "NodeJS",
@@ -1391,7 +1565,8 @@
         "link": "https://nodejs.org/",
         "winget": "OpenJS.NodeJS"
     },
-    "nodejslts": {
+    {
+        "name":"nodejslts",
         "category": "Development",
         "choco": "nodejs-lts",
         "content": "NodeJS LTS",
@@ -1399,7 +1574,8 @@
         "link": "https://nodejs.org/",
         "winget": "OpenJS.NodeJS.LTS"
     },
-    "nomacs": {
+    {
+        "name":"nomacs",
         "category": "Multimedia Tools",
         "choco": "nomacs",
         "content": "Nomacs (Image viewer)",
@@ -1407,7 +1583,8 @@
         "link": "https://nomacs.org/",
         "winget": "nomacs.nomacs"
     },
-    "notepadplus": {
+    {
+        "name":"notepadplus",
         "category": "Document",
         "choco": "notepadplusplus",
         "content": "Notepad++",
@@ -1415,7 +1592,8 @@
         "link": "https://notepad-plus-plus.org/",
         "winget": "Notepad++.Notepad++"
     },
-    "nuget": {
+    {
+        "name":"nuget",
         "category": "Microsoft Tools",
         "choco": "nuget.commandline",
         "content": "NuGet",
@@ -1423,7 +1601,8 @@
         "link": "https://www.nuget.org/",
         "winget": "Microsoft.NuGet"
     },
-    "nushell": {
+    {
+        "name":"nushell",
         "category": "Utilities",
         "choco": "nushell",
         "content": "Nushell",
@@ -1431,7 +1610,8 @@
         "link": "https://www.nushell.sh/",
         "winget": "Nushell.Nushell"
     },
-    "nvclean": {
+    {
+        "name":"nvclean",
         "category": "Utilities",
         "choco": "na",
         "content": "NVCleanstall",
@@ -1439,7 +1619,8 @@
         "link": "https://www.techpowerup.com/nvcleanstall/",
         "winget": "TechPowerUp.NVCleanstall"
     },
-    "nvm": {
+    {
+        "name":"nvm",
         "category": "Development",
         "choco": "nvm",
         "content": "Node Version Manager",
@@ -1447,7 +1628,8 @@
         "link": "https://github.com/coreybutler/nvm-windows",
         "winget": "CoreyButler.NVMforWindows"
     },
-    "obs": {
+    {
+        "name":"obs",
         "category": "Multimedia Tools",
         "choco": "obs-studio",
         "content": "OBS Studio",
@@ -1455,7 +1637,8 @@
         "link": "https://obsproject.com/",
         "winget": "OBSProject.OBSStudio"
     },
-    "obsidian": {
+    {
+        "name":"obsidian",
         "category": "Document",
         "choco": "obsidian",
         "content": "Obsidian",
@@ -1463,7 +1646,8 @@
         "link": "https://obsidian.md/",
         "winget": "Obsidian.Obsidian"
     },
-    "okular": {
+    {
+        "name":"okular",
         "category": "Document",
         "choco": "okular",
         "content": "Okular",
@@ -1471,7 +1655,8 @@
         "link": "https://okular.kde.org/",
         "winget": "KDE.Okular"
     },
-    "onedrive": {
+    {
+        "name":"onedrive",
         "category": "Microsoft Tools",
         "choco": "onedrive",
         "content": "OneDrive",
@@ -1479,7 +1664,8 @@
         "link": "https://onedrive.live.com/",
         "winget": "Microsoft.OneDrive"
     },
-    "onlyoffice": {
+    {
+        "name":"onlyoffice",
         "category": "Document",
         "choco": "onlyoffice",
         "content": "ONLYOffice Desktop",
@@ -1487,7 +1673,8 @@
         "link": "https://www.onlyoffice.com/desktop.aspx",
         "winget": "ONLYOFFICE.DesktopEditors"
     },
-    "OPAutoClicker": {
+    {
+        "name":"OPAutoClicker",
         "category": "Utilities",
         "choco": "autoclicker",
         "content": "OPAutoClicker",
@@ -1495,7 +1682,8 @@
         "link": "https://www.opautoclicker.com",
         "winget": "OPAutoClicker.OPAutoClicker"
     },
-    "openhashtab": {
+    {
+        "name":"openhashtab",
         "category": "Utilities",
         "choco": "openhashtab",
         "content": "OpenHashTab",
@@ -1503,7 +1691,8 @@
         "link": "https://github.com/namazso/OpenHashTab/",
         "winget": "namazso.OpenHashTab"
     },
-    "openoffice": {
+    {
+        "name":"openoffice",
         "category": "Document",
         "choco": "openoffice",
         "content": "Apache OpenOffice",
@@ -1511,7 +1700,8 @@
         "link": "https://www.openoffice.org/",
         "winget": "Apache.OpenOffice"
     },
-    "openrgb": {
+    {
+        "name":"openrgb",
         "category": "Utilities",
         "choco": "openrgb",
         "content": "OpenRGB",
@@ -1519,7 +1709,8 @@
         "link": "https://openrgb.org/",
         "winget": "CalcProgrammer1.OpenRGB"
     },
-    "openscad": {
+    {
+        "name":"openscad",
         "category": "Multimedia Tools",
         "choco": "openscad",
         "content": "OpenSCAD",
@@ -1527,7 +1718,8 @@
         "link": "https://www.openscad.org/",
         "winget": "OpenSCAD.OpenSCAD"
     },
-    "openshell": {
+    {
+        "name":"openshell",
         "category": "Utilities",
         "choco": "open-shell",
         "content": "Open Shell (Start Menu)",
@@ -1535,7 +1727,8 @@
         "link": "https://github.com/Open-Shell/Open-Shell-Menu",
         "winget": "Open-Shell.Open-Shell-Menu"
     },
-    "OpenVPN": {
+    {
+        "name":"OpenVPN",
         "category": "Pro Tools",
         "choco": "openvpn-connect",
         "content": "OpenVPN Connect",
@@ -1543,7 +1736,8 @@
         "link": "https://openvpn.net/",
         "winget": "OpenVPNTechnologies.OpenVPNConnect"
     },
-    "OVirtualBox": {
+    {
+        "name":"OVirtualBox",
         "category": "Utilities",
         "choco": "virtualbox",
         "content": "Oracle VirtualBox",
@@ -1551,7 +1745,8 @@
         "link": "https://www.virtualbox.org/",
         "winget": "Oracle.VirtualBox"
     },
-    "ownclouddesktop": {
+    {
+        "name":"ownclouddesktop",
         "category": "Utilities",
         "choco": "owncloud-client",
         "content": "ownCloud Desktop",
@@ -1559,7 +1754,8 @@
         "link": "https://owncloud.com/desktop-app/",
         "winget": "ownCloud.ownCloudDesktop"
     },
-    "Paintdotnet": {
+    {
+        "name":"Paintdotnet",
         "category": "Multimedia Tools",
         "choco": "paint.net",
         "content": "Paint.NET",
@@ -1567,7 +1763,8 @@
         "link": "https://www.getpaint.net/",
         "winget": "dotPDN.PaintDotNet"
     },
-    "parsec": {
+    {
+        "name":"parsec",
         "category": "Utilities",
         "choco": "parsec",
         "content": "Parsec",
@@ -1575,7 +1772,8 @@
         "link": "https://parsec.app/",
         "winget": "Parsec.Parsec"
     },
-    "pdf24creator": {
+    {
+        "name":"pdf24creator",
         "category": "Document",
         "choco": "pdf24",
         "content": "PDF24 creator",
@@ -1583,7 +1781,8 @@
         "link": "https://tools.pdf24.org/en/",
         "winget": "geeksoftwareGmbH.PDF24Creator"
     },
-    "pdfsam": {
+    {
+        "name":"pdfsam",
         "category": "Document",
         "choco": "pdfsam",
         "content": "PDFsam Basic",
@@ -1591,7 +1790,8 @@
         "link": "https://pdfsam.org/",
         "winget": "PDFsam.PDFsam"
     },
-    "peazip": {
+    {
+        "name":"peazip",
         "category": "Utilities",
         "choco": "peazip",
         "content": "PeaZip",
@@ -1599,7 +1799,8 @@
         "link": "https://peazip.github.io/",
         "winget": "Giorgiotani.Peazip"
     },
-    "piimager": {
+    {
+        "name":"piimager",
         "category": "Utilities",
         "choco": "rpi-imager",
         "content": "Raspberry Pi Imager",
@@ -1607,7 +1808,8 @@
         "link": "https://www.raspberrypi.com/software/",
         "winget": "RaspberryPiFoundation.RaspberryPiImager"
     },
-    "playnite": {
+    {
+        "name":"playnite",
         "category": "Games",
         "choco": "playnite",
         "content": "Playnite",
@@ -1615,7 +1817,8 @@
         "link": "https://playnite.link/",
         "winget": "Playnite.Playnite"
     },
-    "plex": {
+    {
+        "name":"plex",
         "category": "Multimedia Tools",
         "choco": "plexmediaserver",
         "content": "Plex Media Server",
@@ -1623,7 +1826,8 @@
         "link": "https://www.plex.tv/your-media/",
         "winget": "Plex.PlexMediaServer"
     },
-    "plexdesktop": {
+    {
+        "name":"plexdesktop",
         "category": "Multimedia Tools",
         "choco": "plex",
         "content": "Plex Desktop",
@@ -1631,7 +1835,8 @@
         "link": "https://www.plex.tv",
         "winget": "Plex.Plex"
     },
-    "Portmaster": {
+    {
+        "name":"Portmaster",
         "category": "Pro Tools",
         "choco": "portmaster",
         "content": "Portmaster",
@@ -1639,7 +1844,8 @@
         "link": "https://safing.io/",
         "winget": "Safing.Portmaster"
     },
-    "posh": {
+    {
+        "name":"posh",
         "category": "Development",
         "choco": "oh-my-posh",
         "content": "Oh My Posh (Prompt)",
@@ -1647,7 +1853,8 @@
         "link": "https://ohmyposh.dev/",
         "winget": "JanDeDobbeleer.OhMyPosh"
     },
-    "postman": {
+    {
+        "name":"postman",
         "category": "Development",
         "choco": "postman",
         "content": "Postman",
@@ -1655,7 +1862,8 @@
         "link": "https://www.postman.com/",
         "winget": "Postman.Postman"
     },
-    "powerautomate": {
+    {
+        "name":"powerautomate",
         "category": "Microsoft Tools",
         "choco": "powerautomatedesktop",
         "content": "Power Automate",
@@ -1663,7 +1871,8 @@
         "link": "https://www.microsoft.com/en-us/power-platform/products/power-automate",
         "winget": "Microsoft.PowerAutomateDesktop"
     },
-    "powerbi": {
+    {
+        "name":"powerbi",
         "category": "Microsoft Tools",
         "choco": "powerbi",
         "content": "Power BI",
@@ -1671,7 +1880,8 @@
         "link": "https://www.microsoft.com/en-us/power-platform/products/power-bi/",
         "winget": "Microsoft.PowerBI"
     },
-    "powershell": {
+    {
+        "name":"powershell",
         "category": "Microsoft Tools",
         "choco": "powershell-core",
         "content": "PowerShell",
@@ -1679,7 +1889,8 @@
         "link": "https://github.com/PowerShell/PowerShell",
         "winget": "Microsoft.PowerShell"
     },
-    "powertoys": {
+    {
+        "name":"powertoys",
         "category": "Microsoft Tools",
         "choco": "powertoys",
         "content": "PowerToys",
@@ -1687,7 +1898,8 @@
         "link": "https://github.com/microsoft/PowerToys",
         "winget": "Microsoft.PowerToys"
     },
-    "prismlauncher": {
+    {
+        "name":"prismlauncher",
         "category": "Games",
         "choco": "prismlauncher",
         "content": "Prism Launcher",
@@ -1695,7 +1907,8 @@
         "link": "https://prismlauncher.org/",
         "winget": "PrismLauncher.PrismLauncher"
     },
-    "processlasso": {
+    {
+        "name":"processlasso",
         "category": "Utilities",
         "choco": "plasso",
         "content": "Process Lasso",
@@ -1703,7 +1916,8 @@
         "link": "https://bitsum.com/",
         "winget": "BitSum.ProcessLasso"
     },
-    "spotify": {
+    {
+        "name":"spotify",
         "category": "Multimedia Tools",
         "choco": "spotify",
         "content": "Spotify",
@@ -1711,7 +1925,8 @@
         "link": "https://www.spotify.com/",
         "winget": "Spotify.Spotify"
     },
-    "processmonitor": {
+    {
+        "name":"processmonitor",
         "category": "Microsoft Tools",
         "choco": "procexp",
         "content": "SysInternals Process Monitor",
@@ -1719,7 +1934,8 @@
         "link": "https://docs.microsoft.com/en-us/sysinternals/downloads/procmon",
         "winget": "Microsoft.Sysinternals.ProcessMonitor"
     },
-    "orcaslicer": {
+    {
+        "name":"orcaslicer",
         "category": "Utilities",
         "choco": "orcaslicer",
         "content": "OrcaSlicer",
@@ -1727,7 +1943,8 @@
         "link": "https://github.com/SoftFever/OrcaSlicer",
         "winget": "SoftFever.OrcaSlicer"
     },
-    "prucaslicer": {
+    {
+        "name":"prucaslicer",
         "category": "Utilities",
         "choco": "prusaslicer",
         "content": "PrusaSlicer",
@@ -1735,7 +1952,8 @@
         "link": "https://www.prusa3d.com/prusaslicer/",
         "winget": "Prusa3d.PrusaSlicer"
     },
-    "psremoteplay": {
+    {
+        "name":"psremoteplay",
         "category": "Games",
         "choco": "ps-remote-play",
         "content": "PS Remote Play",
@@ -1743,7 +1961,8 @@
         "link": "https://remoteplay.dl.playstation.net/remoteplay/lang/gb/",
         "winget": "PlayStation.PSRemotePlay"
     },
-    "putty": {
+    {
+        "name":"putty",
         "category": "Pro Tools",
         "choco": "putty",
         "content": "PuTTY",
@@ -1751,7 +1970,8 @@
         "link": "https://www.chiark.greenend.org.uk/~sgtatham/putty/",
         "winget": "PuTTY.PuTTY"
     },
-    "python3": {
+    {
+        "name":"python3",
         "category": "Development",
         "choco": "python",
         "content": "Python3",
@@ -1759,7 +1979,8 @@
         "link": "https://www.python.org/",
         "winget": "Python.Python.3.12"
     },
-    "qbittorrent": {
+    {
+        "name":"qbittorrent",
         "category": "Utilities",
         "choco": "qbittorrent",
         "content": "qBittorrent",
@@ -1767,7 +1988,8 @@
         "link": "https://www.qbittorrent.org/",
         "winget": "qBittorrent.qBittorrent"
     },
-    "transmission": {
+    {
+        "name":"transmission",
         "category": "Utilities",
         "choco": "transmission",
         "content": "Transmission",
@@ -1775,7 +1997,8 @@
         "link": "https://transmissionbt.com/",
         "winget": "Transmission.Transmission"
     },
-    "tixati": {
+    {
+        "name":"tixati",
         "category": "Utilities",
         "choco": "tixati.portable",
         "content": "Tixati",
@@ -1783,7 +2006,8 @@
         "link": "https://www.tixati.com/",
         "winget": "Tixati.Tixati.Portable"
     },
-    "qtox": {
+    {
+        "name":"qtox",
         "category": "Communications",
         "choco": "qtox",
         "content": "QTox",
@@ -1791,7 +2015,8 @@
         "link": "https://qtox.github.io/",
         "winget": "Tox.qTox"
     },
-    "quicklook": {
+    {
+        "name":"quicklook",
         "category": "Utilities",
         "choco": "quicklook",
         "content": "Quicklook",
@@ -1799,7 +2024,8 @@
         "link": "https://github.com/QL-Win/QuickLook",
         "winget": "QL-Win.QuickLook"
     },
-    "rainmeter": {
+    {
+        "name":"rainmeter",
         "category": "Utilities",
         "choco": "na",
         "content": "Rainmeter",
@@ -1807,7 +2033,8 @@
         "link": "https://www.rainmeter.net/",
         "winget": "Rainmeter.Rainmeter"
     },
-    "revo": {
+    {
+        "name":"revo",
         "category": "Utilities",
         "choco": "revo-uninstaller",
         "content": "Revo Uninstaller",
@@ -1815,7 +2042,8 @@
         "link": "https://www.revouninstaller.com/",
         "winget": "RevoUninstaller.RevoUninstaller"
     },
-    "WiseProgramUninstaller": {
+    {
+        "name":"WiseProgramUninstaller",
         "category": "Utilities",
         "choco": "na",
         "content": "Wise Program Uninstaller (WiseCleaner)",
@@ -1823,7 +2051,8 @@
         "link": "https://www.wisecleaner.com/wise-program-uninstaller.html",
         "winget": "WiseCleaner.WiseProgramUninstaller"
     },
-    "revolt": {
+    {
+        "name":"revolt",
         "category": "Communications",
         "choco": "na",
         "content": "Revolt",
@@ -1831,7 +2060,8 @@
         "link": "https://revolt.chat/",
         "winget": "Revolt.RevoltDesktop"
     },
-    "ripgrep": {
+    {
+        "name":"ripgrep",
         "category": "Utilities",
         "choco": "ripgrep",
         "content": "Ripgrep",
@@ -1839,7 +2069,8 @@
         "link": "https://github.com/BurntSushi/ripgrep/",
         "winget": "BurntSushi.ripgrep.MSVC"
     },
-    "rufus": {
+    {
+        "name":"rufus",
         "category": "Utilities",
         "choco": "rufus",
         "content": "Rufus Imager",
@@ -1847,7 +2078,8 @@
         "link": "https://rufus.ie/",
         "winget": "Rufus.Rufus"
     },
-    "rustdesk": {
+    {
+        "name":"rustdesk",
         "category": "Pro Tools",
         "choco": "rustdesk.portable",
         "content": "RustDesk",
@@ -1855,7 +2087,8 @@
         "link": "https://rustdesk.com/",
         "winget": "RustDesk.RustDesk"
     },
-    "rustlang": {
+    {
+        "name":"rustlang",
         "category": "Development",
         "choco": "rust",
         "content": "Rust",
@@ -1863,7 +2096,8 @@
         "link": "https://www.rust-lang.org/",
         "winget": "Rustlang.Rust.MSVC"
     },
-    "sagethumbs": {
+    {
+        "name":"sagethumbs",
         "category": "Utilities",
         "choco": "sagethumbs",
         "content": "SageThumbs",
@@ -1871,7 +2105,8 @@
         "link": "https://sagethumbs.en.lo4d.com/windows",
         "winget": "CherubicSoftware.SageThumbs"
     },
-    "samsungmagician": {
+    {
+        "name":"samsungmagician",
         "category": "Utilities",
         "choco": "samsung-magician",
         "content": "Samsung Magician",
@@ -1879,7 +2114,8 @@
         "link": "https://semiconductor.samsung.com/consumer-storage/magician/",
         "winget": "Samsung.SamsungMagician"
     },
-    "sandboxie": {
+    {
+        "name":"sandboxie",
         "category": "Utilities",
         "choco": "sandboxie",
         "content": "Sandboxie Plus",
@@ -1887,7 +2123,8 @@
         "link": "https://github.com/sandboxie-plus/Sandboxie",
         "winget": "Sandboxie.Plus"
     },
-    "sdio": {
+    {
+        "name":"sdio",
         "category": "Utilities",
         "choco": "sdio",
         "content": "Snappy Driver Installer Origin",
@@ -1895,7 +2132,8 @@
         "link": "https://sourceforge.net/projects/snappy-driver-installer-origin",
         "winget": "GlennDelahoy.SnappyDriverInstallerOrigin"
     },
-    "session": {
+    {
+        "name":"session",
         "category": "Communications",
         "choco": "session",
         "content": "Session",
@@ -1903,7 +2141,8 @@
         "link": "https://getsession.org/",
         "winget": "Oxen.Session"
     },
-    "sharex": {
+    {
+        "name":"sharex",
         "category": "Multimedia Tools",
         "choco": "sharex",
         "content": "ShareX (Screenshots)",
@@ -1911,7 +2150,8 @@
         "link": "https://getsharex.com/",
         "winget": "ShareX.ShareX"
     },
-    "nilesoftShell": {
+    {
+        "name":"nilesoftShell",
         "category": "Utilities",
         "choco": "nilesoft-shell",
         "content": "Nilesoft Shell",
@@ -1919,7 +2159,8 @@
         "link": "https://nilesoft.org/",
         "winget": "Nilesoft.Shell"
     },
-    "sidequest": {
+    {
+        "name":"sidequest",
         "category": "Games",
         "choco": "sidequest",
         "content": "SideQuestVR",
@@ -1927,7 +2168,8 @@
         "link": "https://sidequestvr.com/",
         "winget": "SideQuestVR.SideQuest"
     },
-    "signal": {
+    {
+        "name":"signal",
         "category": "Communications",
         "choco": "signal",
         "content": "Signal",
@@ -1935,7 +2177,8 @@
         "link": "https://signal.org/",
         "winget": "OpenWhisperSystems.Signal"
     },
-    "signalrgb": {
+    {
+        "name":"signalrgb",
         "category": "Utilities",
         "choco": "na",
         "content": "SignalRGB",
@@ -1943,7 +2186,8 @@
         "link": "https://www.signalrgb.com/",
         "winget": "WhirlwindFX.SignalRgb"
     },
-    "simplenote": {
+    {
+        "name":"simplenote",
         "category": "Document",
         "choco": "simplenote",
         "content": "simplenote",
@@ -1951,7 +2195,8 @@
         "link": "https://simplenote.com/",
         "winget": "Automattic.Simplenote"
     },
-    "simplewall": {
+    {
+        "name":"simplewall",
         "category": "Pro Tools",
         "choco": "simplewall",
         "content": "Simplewall",
@@ -1959,7 +2204,8 @@
         "link": "https://github.com/henrypp/simplewall",
         "winget": "Henry++.simplewall"
     },
-    "skype": {
+    {
+        "name":"skype",
         "category": "Communications",
         "choco": "skype",
         "content": "Skype",
@@ -1967,7 +2213,8 @@
         "link": "https://www.skype.com/",
         "winget": "Microsoft.Skype"
     },
-    "slack": {
+    {
+        "name":"slack",
         "category": "Communications",
         "choco": "slack",
         "content": "Slack",
@@ -1975,7 +2222,8 @@
         "link": "https://slack.com/",
         "winget": "SlackTechnologies.Slack"
     },
-    "spacedrive": {
+    {
+        "name":"spacedrive",
         "category": "Utilities",
         "choco": "na",
         "content": "Spacedrive File Manager",
@@ -1983,7 +2231,8 @@
         "link": "https://www.spacedrive.com/",
         "winget": "spacedrive.Spacedrive"
     },
-    "spacesniffer": {
+    {
+        "name":"spacesniffer",
         "category": "Utilities",
         "choco": "spacesniffer",
         "content": "SpaceSniffer",
@@ -1991,7 +2240,8 @@
         "link": "http://www.uderzo.it/main_products/space_sniffer/",
         "winget": "UderzoSoftware.SpaceSniffer"
     },
-    "spotube": {
+    {
+        "name":"spotube",
         "category": "Multimedia Tools",
         "choco": "spotube",
         "content": "Spotube",
@@ -1999,7 +2249,8 @@
         "link": "https://github.com/KRTirtho/spotube",
         "winget": "KRTirtho.Spotube"
     },
-    "starship": {
+    {
+        "name":"starship",
         "category": "Development",
         "choco": "starship",
         "content": "Starship (Shell Prompt)",
@@ -2007,7 +2258,8 @@
         "link": "https://starship.rs/",
         "winget": "starship"
     },
-    "steam": {
+    {
+        "name":"steam",
         "category": "Games",
         "choco": "steam-client",
         "content": "Steam",
@@ -2015,7 +2267,8 @@
         "link": "https://store.steampowered.com/about/",
         "winget": "Valve.Steam"
     },
-    "strawberry": {
+    {
+        "name":"strawberry",
         "category": "Multimedia Tools",
         "choco": "strawberrymusicplayer",
         "content": "Strawberry (Music Player)",
@@ -2023,7 +2276,8 @@
         "link": "https://www.strawberrymusicplayer.org/",
         "winget": "StrawberryMusicPlayer.Strawberry"
     },
-    "stremio": {
+    {
+        "name":"stremio",
         "winget": "Stremio.Stremio",
         "choco": "stremio",
         "category": "Multimedia Tools",
@@ -2031,7 +2285,8 @@
         "link": "https://www.stremio.com/",
         "description": "Stremio is a media center application that allows users to organize and stream their favorite movies, TV shows, and video content."
     },
-    "sublimemerge": {
+    {
+        "name":"sublimemerge",
         "category": "Development",
         "choco": "sublimemerge",
         "content": "Sublime Merge",
@@ -2039,7 +2294,8 @@
         "link": "https://www.sublimemerge.com/",
         "winget": "SublimeHQ.SublimeMerge"
     },
-    "sublimetext": {
+    {
+        "name":"sublimetext",
         "category": "Development",
         "choco": "sublimetext4",
         "content": "Sublime Text",
@@ -2047,7 +2303,8 @@
         "link": "https://www.sublimetext.com/",
         "winget": "SublimeHQ.SublimeText.4"
     },
-    "sumatra": {
+    {
+        "name":"sumatra",
         "category": "Document",
         "choco": "sumatrapdf",
         "content": "Sumatra PDF",
@@ -2055,7 +2312,8 @@
         "link": "https://www.sumatrapdfreader.org/free-pdf-reader.html",
         "winget": "SumatraPDF.SumatraPDF"
     },
-    "pdfgear": {
+    {
+        "name":"pdfgear",
         "category": "Document",
         "choco": "na",
         "content": "PDFgear",
@@ -2063,7 +2321,8 @@
         "link": "https://www.pdfgear.com/",
         "winget": "PDFgear.PDFgear"
     },
-    "sunshine": {
+    {
+        "name":"sunshine",
         "category": "Games",
         "choco": "sunshine",
         "content": "Sunshine/GameStream Server",
@@ -2071,7 +2330,8 @@
         "link": "https://github.com/LizardByte/Sunshine",
         "winget": "LizardByte.Sunshine"
     },
-    "superf4": {
+    {
+        "name":"superf4",
         "category": "Utilities",
         "choco": "superf4",
         "content": "SuperF4",
@@ -2079,7 +2339,8 @@
         "link": "https://stefansundin.github.io/superf4/",
         "winget": "StefanSundin.Superf4"
     },
-    "swift": {
+    {
+        "name":"swift",
         "category": "Development",
         "choco": "na",
         "content": "Swift toolchain",
@@ -2087,7 +2348,8 @@
         "link": "https://www.swift.org/",
         "winget": "Swift.Toolchain"
     },
-    "synctrayzor": {
+    {
+        "name":"synctrayzor",
         "category": "Utilities",
         "choco": "synctrayzor",
         "content": "SyncTrayzor",
@@ -2095,7 +2357,8 @@
         "link": "https://github.com/canton7/SyncTrayzor/",
         "winget": "SyncTrayzor.SyncTrayzor"
     },
-    "sqlmanagementstudio": {
+    {
+        "name":"sqlmanagementstudio",
         "category": "Microsoft Tools",
         "choco": "sql-server-management-studio",
         "content": "Microsoft SQL Server Management Studio",
@@ -2103,7 +2366,8 @@
         "link": "https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16",
         "winget": "Microsoft.SQLServerManagementStudio"
     },
-    "tabby": {
+    {
+        "name":"tabby",
         "category": "Utilities",
         "choco": "tabby",
         "content": "Tabby.sh",
@@ -2111,7 +2375,8 @@
         "link": "https://tabby.sh/",
         "winget": "Eugeny.Tabby"
     },
-    "tailscale": {
+    {
+        "name":"tailscale",
         "category": "Utilities",
         "choco": "tailscale",
         "content": "Tailscale",
@@ -2119,7 +2384,8 @@
         "link": "https://tailscale.com/",
         "winget": "tailscale.tailscale"
     },
-    "TcNoAccSwitcher": {
+    {
+        "name":"TcNoAccSwitcher",
         "category": "Games",
         "choco": "tcno-acc-switcher",
         "content": "TCNO Account Switcher",
@@ -2127,7 +2393,8 @@
         "link": "https://github.com/TCNOco/TcNo-Acc-Switcher",
         "winget": "TechNobo.TcNoAccountSwitcher"
     },
-    "tcpview": {
+    {
+        "name":"tcpview",
         "category": "Microsoft Tools",
         "choco": "tcpview",
         "content": "SysInternals TCPView",
@@ -2135,7 +2402,8 @@
         "link": "https://docs.microsoft.com/en-us/sysinternals/downloads/tcpview",
         "winget": "Microsoft.Sysinternals.TCPView"
     },
-    "teams": {
+    {
+        "name":"teams",
         "category": "Communications",
         "choco": "microsoft-teams",
         "content": "Teams",
@@ -2143,7 +2411,8 @@
         "link": "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software",
         "winget": "Microsoft.Teams"
     },
-    "teamviewer": {
+    {
+        "name":"teamviewer",
         "category": "Utilities",
         "choco": "teamviewer9",
         "content": "TeamViewer",
@@ -2151,7 +2420,8 @@
         "link": "https://www.teamviewer.com/",
         "winget": "TeamViewer.TeamViewer"
     },
-    "telegram": {
+    {
+        "name":"telegram",
         "category": "Communications",
         "choco": "telegram",
         "content": "Telegram",
@@ -2159,7 +2429,8 @@
         "link": "https://telegram.org/",
         "winget": "Telegram.TelegramDesktop"
     },
-    "unigram": {
+    {
+        "name":"unigram",
         "category": "Communications",
         "choco": "na",
         "content": "Unigram",
@@ -2167,7 +2438,8 @@
         "link": "https://unigramdev.github.io/",
         "winget": "Telegram.Unigram"
     },
-    "terminal": {
+    {
+        "name":"terminal",
         "category": "Microsoft Tools",
         "choco": "microsoft-windows-terminal",
         "content": "Windows Terminal",
@@ -2175,7 +2447,8 @@
         "link": "https://aka.ms/terminal",
         "winget": "Microsoft.WindowsTerminal"
     },
-    "Thonny": {
+    {
+        "name":"Thonny",
         "category": "Development",
         "choco": "thonny",
         "content": "Thonny Python IDE",
@@ -2183,7 +2456,8 @@
         "link": "https://github.com/thonny/thonny",
         "winget": "AivarAnnamaa.Thonny"
     },
-    "MuEditor": {
+    {
+        "name":"MuEditor",
         "category": "Development",
         "choco": "na",
         "content": "Code With Mu (Mu Editor)",
@@ -2191,7 +2465,8 @@
         "link": "https://codewith.mu/",
         "winget": "Mu.Mu"
     },
-    "thorium": {
+    {
+        "name":"thorium",
         "category": "Browsers",
         "choco": "na",
         "content": "Thorium Browser AVX2",
@@ -2199,7 +2474,8 @@
         "link": "http://thorium.rocks/",
         "winget": "Alex313031.Thorium.AVX2"
     },
-    "thunderbird": {
+    {
+        "name":"thunderbird",
         "category": "Communications",
         "choco": "thunderbird",
         "content": "Thunderbird",
@@ -2207,7 +2483,8 @@
         "link": "https://www.thunderbird.net/",
         "winget": "Mozilla.Thunderbird"
     },
-    "betterbird": {
+    {
+        "name":"betterbird",
         "category": "Communications",
         "choco": "betterbird",
         "content": "Betterbird",
@@ -2215,7 +2492,8 @@
         "link": "https://www.betterbird.eu/",
         "winget": "Betterbird.Betterbird"
     },
-    "tidal": {
+    {
+        "name":"tidal",
         "category": "Multimedia Tools",
         "choco": "na",
         "content": "Tidal",
@@ -2223,7 +2501,8 @@
         "link": "https://tidal.com/",
         "winget": "9NNCB5BS59PH"
     },
-    "tor": {
+    {
+        "name":"tor",
         "category": "Browsers",
         "choco": "tor-browser",
         "content": "Tor Browser",
@@ -2231,7 +2510,8 @@
         "link": "https://www.torproject.org/",
         "winget": "TorProject.TorBrowser"
     },
-    "totalcommander": {
+    {
+        "name":"totalcommander",
         "category": "Utilities",
         "choco": "TotalCommander",
         "content": "Total Commander",
@@ -2239,7 +2519,8 @@
         "link": "https://www.ghisler.com/",
         "winget": "Ghisler.TotalCommander"
     },
-    "treesize": {
+    {
+        "name":"treesize",
         "category": "Utilities",
         "choco": "treesizefree",
         "content": "TreeSize Free",
@@ -2247,7 +2528,8 @@
         "link": "https://www.jam-software.com/treesize_free/",
         "winget": "JAMSoftware.TreeSize.Free"
     },
-    "ttaskbar": {
+    {
+        "name":"ttaskbar",
         "category": "Utilities",
         "choco": "translucenttb",
         "content": "Translucent Taskbar",
@@ -2255,7 +2537,8 @@
         "link": "https://github.com/TranslucentTB/TranslucentTB",
         "winget": "9PF4KZ2VN4W9"
     },
-    "twinkletray": {
+    {
+        "name":"twinkletray",
         "category": "Utilities",
         "choco": "twinkle-tray",
         "content": "Twinkle Tray",
@@ -2263,7 +2546,8 @@
         "link": "https://twinkletray.com/",
         "winget": "xanderfrangos.twinkletray"
     },
-    "ubisoft": {
+    {
+        "name":"ubisoft",
         "category": "Games",
         "choco": "ubisoft-connect",
         "content": "Ubisoft Connect",
@@ -2271,7 +2555,8 @@
         "link": "https://ubisoftconnect.com/",
         "winget": "Ubisoft.Connect"
     },
-    "ungoogled": {
+    {
+        "name":"ungoogled",
         "category": "Browsers",
         "choco": "ungoogled-chromium",
         "content": "Ungoogled",
@@ -2279,7 +2564,8 @@
         "link": "https://github.com/Eloston/ungoogled-chromium",
         "winget": "eloston.ungoogled-chromium"
     },
-    "unity": {
+    {
+        "name":"unity",
         "category": "Development",
         "choco": "unityhub",
         "content": "Unity Game Engine",
@@ -2287,7 +2573,8 @@
         "link": "https://unity.com/",
         "winget": "Unity.UnityHub"
     },
-    "vagrant": {
+    {
+        "name":"vagrant",
         "category": "Development",
         "choco": "vagrant",
         "content": "Vagrant",
@@ -2295,7 +2582,8 @@
         "link": "https://www.vagrantup.com/",
         "winget": "Hashicorp.Vagrant"
     },
-    "vc2015_32": {
+    {
+        "name":"vc2015_32",
         "category": "Microsoft Tools",
         "choco": "na",
         "content": "Visual C++ 2015-2022 32-bit",
@@ -2303,7 +2591,8 @@
         "link": "https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads",
         "winget": "Microsoft.VCRedist.2015+.x86"
     },
-    "vc2015_64": {
+    {
+        "name":"vc2015_64",
         "category": "Microsoft Tools",
         "choco": "na",
         "content": "Visual C++ 2015-2022 64-bit",
@@ -2311,7 +2600,8 @@
         "link": "https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads",
         "winget": "Microsoft.VCRedist.2015+.x64"
     },
-    "ventoy": {
+    {
+        "name":"ventoy",
         "category": "Pro Tools",
         "choco": "ventoy",
         "content": "Ventoy",
@@ -2319,7 +2609,8 @@
         "link": "https://www.ventoy.net/",
         "winget": "Ventoy.Ventoy"
     },
-    "vesktop": {
+    {
+        "name":"vesktop",
         "category": "Communications",
         "choco": "na",
         "content": "Vesktop",
@@ -2327,7 +2618,8 @@
         "link": "https://github.com/Vencord/Vesktop",
         "winget": "Vencord.Vesktop"
     },
-    "viber": {
+    {
+        "name":"viber",
         "category": "Communications",
         "choco": "viber",
         "content": "Viber",
@@ -2335,7 +2627,8 @@
         "link": "https://www.viber.com/",
         "winget": "Viber.Viber"
     },
-    "videomass": {
+    {
+        "name":"videomass",
         "category": "Multimedia Tools",
         "choco": "na",
         "content": "Videomass",
@@ -2343,7 +2636,8 @@
         "link": "https://jeanslack.github.io/Videomass/",
         "winget": "GianlucaPernigotto.Videomass"
     },
-    "visualstudio": {
+    {
+        "name":"visualstudio",
         "category": "Development",
         "choco": "visualstudio2022community",
         "content": "Visual Studio 2022",
@@ -2351,7 +2645,8 @@
         "link": "https://visualstudio.microsoft.com/",
         "winget": "Microsoft.VisualStudio.2022.Community"
     },
-    "vivaldi": {
+    {
+        "name":"vivaldi",
         "category": "Browsers",
         "choco": "vivaldi",
         "content": "Vivaldi",
@@ -2359,7 +2654,8 @@
         "link": "https://vivaldi.com/",
         "winget": "Vivaldi.Vivaldi"
     },
-    "vlc": {
+    {
+        "name":"vlc",
         "category": "Multimedia Tools",
         "choco": "vlc",
         "content": "VLC (Video Player)",
@@ -2367,7 +2663,8 @@
         "link": "https://www.videolan.org/vlc/",
         "winget": "VideoLAN.VLC"
     },
-    "voicemeeter": {
+    {
+        "name":"voicemeeter",
         "category": "Multimedia Tools",
         "choco": "voicemeeter",
         "content": "Voicemeeter (Audio)",
@@ -2375,7 +2672,8 @@
         "link": "https://voicemeeter.com/",
         "winget": "VB-Audio.Voicemeeter"
     },
-    "VoicemeeterPotato": {
+    {
+        "name":"VoicemeeterPotato",
         "category": "Multimedia Tools",
         "choco": "voicemeeter-potato",
         "content": "Voicemeeter Potato",
@@ -2383,7 +2681,8 @@
         "link": "https://voicemeeter.com/",
         "winget": "VB-Audio.Voicemeeter.Potato"
     },
-    "vrdesktopstreamer": {
+    {
+        "name":"vrdesktopstreamer",
         "category": "Games",
         "choco": "na",
         "content": "Virtual Desktop Streamer",
@@ -2391,7 +2690,8 @@
         "link": "https://www.vrdesktop.net/",
         "winget": "VirtualDesktop.Streamer"
     },
-    "vscode": {
+    {
+        "name":"vscode",
         "category": "Development",
         "choco": "vscode",
         "content": "VS Code",
@@ -2399,7 +2699,8 @@
         "link": "https://code.visualstudio.com/",
         "winget": "Microsoft.VisualStudioCode"
     },
-    "vscodium": {
+    {
+        "name":"vscodium",
         "category": "Development",
         "choco": "vscodium",
         "content": "VS Codium",
@@ -2407,7 +2708,8 @@
         "link": "https://vscodium.com/",
         "winget": "VSCodium.VSCodium"
     },
-    "waterfox": {
+    {
+        "name":"waterfox",
         "category": "Browsers",
         "choco": "waterfox",
         "content": "Waterfox",
@@ -2415,7 +2717,8 @@
         "link": "https://www.waterfox.net/",
         "winget": "Waterfox.Waterfox"
     },
-    "wazuh": {
+    {
+        "name":"wazuh",
         "category": "Utilities",
         "choco": "wazuh-agent",
         "content": "Wazuh.",
@@ -2423,7 +2726,8 @@
         "link": "https://wazuh.com/",
         "winget": "Wazuh.WazuhAgent"
     },
-    "wezterm": {
+    {
+        "name":"wezterm",
         "category": "Development",
         "choco": "wezterm",
         "content": "Wezterm",
@@ -2431,7 +2735,8 @@
         "link": "https://wezfurlong.org/wezterm/index.html",
         "winget": "wez.wezterm"
     },
-    "windowspchealth": {
+    {
+        "name":"windowspchealth",
         "category": "Utilities",
         "choco": "na",
         "content": "Windows PC Health Check",
@@ -2439,7 +2744,8 @@
         "link": "https://support.microsoft.com/en-us/windows/how-to-use-the-pc-health-check-app-9c8abd9b-03ba-4e67-81ef-36f37caa7844",
         "winget": "Microsoft.WindowsPCHealthCheck"
     },
-    "WindowGrid": {
+    {
+        "name":"WindowGrid",
         "category": "Utilities",
         "choco": "windowgrid",
         "content": "WindowGrid",
@@ -2447,7 +2753,8 @@
         "link": "http://windowgrid.net/",
         "winget": "na"
     },
-    "wingetui": {
+    {
+        "name":"wingetui",
         "category": "Utilities",
         "choco": "wingetui",
         "content": "UniGetUI",
@@ -2455,7 +2762,8 @@
         "link": "https://www.marticliment.com/wingetui/",
         "winget": "SomePythonThings.WingetUIStore"
     },
-    "winmerge": {
+    {
+        "name":"winmerge",
         "category": "Document",
         "choco": "winmerge",
         "content": "WinMerge",
@@ -2463,7 +2771,8 @@
         "link": "https://winmerge.org/",
         "winget": "WinMerge.WinMerge"
     },
-    "winpaletter": {
+    {
+        "name":"winpaletter",
         "category": "Utilities",
         "choco": "WinPaletter",
         "content": "WinPaletter",
@@ -2471,7 +2780,8 @@
         "link": "https://github.com/Abdelrhman-AK/WinPaletter",
         "winget": "Abdelrhman-AK.WinPaletter"
     },
-    "winrar": {
+    {
+        "name":"winrar",
         "category": "Utilities",
         "choco": "winrar",
         "content": "WinRAR",
@@ -2479,7 +2789,8 @@
         "link": "https://www.win-rar.com/",
         "winget": "RARLab.WinRAR"
     },
-    "winscp": {
+    {
+        "name":"winscp",
         "category": "Pro Tools",
         "choco": "winscp",
         "content": "WinSCP",
@@ -2487,7 +2798,8 @@
         "link": "https://winscp.net/",
         "winget": "WinSCP.WinSCP"
     },
-    "wireguard": {
+    {
+        "name":"wireguard",
         "category": "Pro Tools",
         "choco": "wireguard",
         "content": "WireGuard",
@@ -2495,7 +2807,8 @@
         "link": "https://www.wireguard.com/",
         "winget": "WireGuard.WireGuard"
     },
-    "wireshark": {
+    {
+        "name":"wireshark",
         "category": "Pro Tools",
         "choco": "wireshark",
         "content": "Wireshark",
@@ -2503,7 +2816,8 @@
         "link": "https://www.wireshark.org/",
         "winget": "WiresharkFoundation.Wireshark"
     },
-    "wisetoys": {
+    {
+        "name":"wisetoys",
         "category": "Utilities",
         "choco": "na",
         "content": "WiseToys",
@@ -2511,7 +2825,8 @@
         "link": "https://toys.wisecleaner.com/",
         "winget": "WiseCleaner.WiseToys"
     },
-    "TeraCopy": {
+    {
+        "name":"TeraCopy",
         "category": "Utilities",
         "choco": "TeraCopy",
         "content": "TeraCopy",
@@ -2519,7 +2834,8 @@
         "link": "https://codesector.com/teracopy",
         "winget": "CodeSector.TeraCopy"
     },
-    "wizfile": {
+    {
+        "name":"wizfile",
         "category": "Utilities",
         "choco": "na",
         "content": "WizFile",
@@ -2527,7 +2843,8 @@
         "link": "https://antibody-software.com/wizfile/",
         "winget": "AntibodySoftware.WizFile"
     },
-    "wiztree": {
+    {
+        "name":"wiztree",
         "category": "Utilities",
         "choco": "wiztree",
         "content": "WizTree",
@@ -2535,7 +2852,8 @@
         "link": "https://wiztreefree.com/",
         "winget": "AntibodySoftware.WizTree"
     },
-    "xdm": {
+    {
+        "name":"xdm",
         "category": "Utilities",
         "choco": "xdm",
         "content": "Xtreme Download Manager",
@@ -2543,7 +2861,8 @@
         "link": "https://xtremedownloadmanager.com/",
         "winget": "subhra74.XtremeDownloadManager"
     },
-    "xeheditor": {
+    {
+        "name":"xeheditor",
         "category": "Utilities",
         "choco": "HxD",
         "content": "HxD Hex Editor",
@@ -2551,7 +2870,8 @@
         "link": "https://mh-nexus.de/en/hxd/",
         "winget": "MHNexus.HxD"
     },
-    "xemu": {
+    {
+        "name":"xemu",
         "category": "Games",
         "choco": "na",
         "content": "XEMU",
@@ -2559,7 +2879,8 @@
         "link": "https://xemu.app/",
         "winget": "xemu-project.xemu"
     },
-    "xnview": {
+    {
+        "name":"xnview",
         "category": "Utilities",
         "choco": "xnview",
         "content": "XnView classic",
@@ -2567,7 +2888,8 @@
         "link": "https://www.xnview.com/en/xnview/",
         "winget": "XnSoft.XnView.Classic"
     },
-    "xournal": {
+    {
+        "name":"xournal",
         "category": "Document",
         "choco": "xournalplusplus",
         "content": "Xournal++",
@@ -2575,7 +2897,8 @@
         "link": "https://xournalpp.github.io/",
         "winget": "Xournal++.Xournal++"
     },
-    "xpipe": {
+    {
+        "name":"xpipe",
         "category": "Pro Tools",
         "choco": "xpipe",
         "content": "XPipe",
@@ -2583,7 +2906,8 @@
         "link": "https://xpipe.io/",
         "winget": "xpipe-io.xpipe"
     },
-    "yarn": {
+    {
+        "name":"yarn",
         "category": "Development",
         "choco": "yarn",
         "content": "Yarn",
@@ -2591,7 +2915,8 @@
         "link": "https://yarnpkg.com/",
         "winget": "Yarn.Yarn"
     },
-    "ytdlp": {
+    {
+        "name":"ytdlp",
         "category": "Multimedia Tools",
         "choco": "yt-dlp",
         "content": "Yt-dlp",
@@ -2599,7 +2924,8 @@
         "link": "https://github.com/yt-dlp/yt-dlp",
         "winget": "yt-dlp.yt-dlp"
     },
-    "zerotierone": {
+    {
+        "name":"zerotierone",
         "category": "Utilities",
         "choco": "zerotier-one",
         "content": "ZeroTier One",
@@ -2607,7 +2933,8 @@
         "link": "https://zerotier.com/",
         "winget": "ZeroTier.ZeroTierOne"
     },
-    "zim": {
+    {
+        "name":"zim",
         "category": "Document",
         "choco": "zim",
         "content": "Zim Desktop Wiki",
@@ -2615,7 +2942,8 @@
         "link": "https://zim-wiki.org/",
         "winget": "Zimwiki.Zim"
     },
-    "znote": {
+    {
+        "name":"znote",
         "category": "Document",
         "choco": "na",
         "content": "Znote",
@@ -2623,7 +2951,8 @@
         "link": "https://znote.io/",
         "winget": "alagrede.znote"
     },
-    "zoom": {
+    {
+        "name":"zoom",
         "category": "Communications",
         "choco": "zoom",
         "content": "Zoom",
@@ -2631,7 +2960,8 @@
         "link": "https://zoom.us/",
         "winget": "Zoom.Zoom"
     },
-    "zoomit": {
+    {
+        "name":"zoomit",
         "category": "Utilities",
         "choco": "na",
         "content": "ZoomIt",
@@ -2639,7 +2969,8 @@
         "link": "https://learn.microsoft.com/en-us/sysinternals/downloads/zoomit",
         "winget": "Microsoft.Sysinternals.ZoomIt"
     },
-    "zotero": {
+    {
+        "name":"zotero",
         "category": "Document",
         "choco": "zotero",
         "content": "Zotero",
@@ -2647,7 +2978,8 @@
         "link": "https://www.zotero.org/",
         "winget": "DigitalScholar.Zotero"
     },
-    "zoxide": {
+    {
+        "name":"zoxide",
         "category": "Utilities",
         "choco": "zoxide",
         "content": "Zoxide",
@@ -2655,7 +2987,8 @@
         "link": "https://github.com/ajeetdsouza/zoxide",
         "winget": "ajeetdsouza.zoxide"
     },
-    "zulip": {
+    {
+        "name":"zulip",
         "category": "Communications",
         "choco": "zulip",
         "content": "Zulip",
@@ -2663,7 +2996,8 @@
         "link": "https://zulipchat.com/",
         "winget": "Zulip.Zulip"
     },
-    "syncthingtray": {
+    {
+        "name":"syncthingtray",
         "category": "Utilities",
         "choco": "syncthingtray",
         "content": "Syncthingtray",
@@ -2671,7 +3005,8 @@
         "link": "https://github.com/Martchus/syncthingtray",
         "winget": "Martchus.syncthingtray"
     },
-    "miniconda": {
+    {
+        "name":"miniconda",
         "category": "Development",
         "choco": "miniconda3",
         "content": "Miniconda",
@@ -2679,7 +3014,8 @@
         "link": "https://docs.conda.io/projects/miniconda",
         "winget": "Anaconda.Miniconda3"
     },
-    "pixi": {
+    {
+        "name":"pixi",
         "category": "Development",
         "choco": "pixi",
         "content": "Pixi",
@@ -2687,7 +3023,8 @@
         "link": "https://pixi.sh",
         "winget": "prefix-dev.pixi"
     },
-    "temurin": {
+    {
+        "name":"temurin",
         "category": "Development",
         "choco": "temurin",
         "content": "Eclipse Temurin",
@@ -2695,7 +3032,8 @@
         "link": "https://adoptium.net/temurin/",
         "winget": "EclipseAdoptium.Temurin.21.JDK"
     },
-    "intelpresentmon": {
+    {
+        "name":"intelpresentmon",
         "category": "Utilities",
         "choco": "na",
         "content": "Intel-PresentMon",
@@ -2703,7 +3041,8 @@
         "link": "https://game.intel.com/us/stories/intel-presentmon/",
         "winget": "Intel.PresentMon.Beta"
     },
-    "pyenvwin": {
+    {
+        "name":"pyenvwin",
         "category": "Development",
         "choco": "pyenv-win",
         "content": "Python Version Manager (pyenv-win)",
@@ -2711,7 +3050,8 @@
         "link": "https://pyenv-win.github.io/pyenv-win/",
         "winget": "na"
     },
-    "tightvnc": {
+    {
+        "name":"tightvnc",
         "category": "Utilities",
         "choco": "TightVNC",
         "content": "TightVNC",
@@ -2719,7 +3059,8 @@
         "link": "https://www.tightvnc.com/",
         "winget": "GlavSoft.TightVNC"
     },
-    "ultravnc": {
+    {
+        "name":"ultravnc",
         "category": "Utilities",
         "choco": "ultravnc",
         "content": "UltraVNC",
@@ -2727,7 +3068,8 @@
         "link": "https://uvnc.com/",
         "winget": "uvncbvba.UltraVnc"
     },
-    "windowsfirewallcontrol": {
+    {
+        "name":"windowsfirewallcontrol",
         "category": "Utilities",
         "choco": "windowsfirewallcontrol",
         "content": "Windows Firewall Control",
@@ -2735,7 +3077,8 @@
         "link": "https://www.binisoft.org/wfc",
         "winget": "BiniSoft.WindowsFirewallControl"
     },
-    "vistaswitcher": {
+    {
+        "name":"vistaswitcher",
         "category": "Utilities",
         "choco": "na",
         "content": "VistaSwitcher",
@@ -2743,7 +3086,8 @@
         "link": "https://www.ntwind.com/freeware/vistaswitcher.html",
         "winget": "ntwind.VistaSwitcher"
     },
-    "autodarkmode": {
+    {
+        "name":"autodarkmode",
         "category": "Utilities",
         "choco": "auto-dark-mode",
         "content": "Windows Auto Dark Mode",
@@ -2751,7 +3095,8 @@
         "link": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode",
         "winget": "Armin2208.WindowsAutoNightMode"
     },
-    "AmbieWhiteNoise": {
+    {
+        "name":"AmbieWhiteNoise",
         "category": "Utilities",
         "choco": "na",
         "content": "Ambie White Noise",
@@ -2759,7 +3104,8 @@
         "link": "https://ambieapp.com/",
         "winget": "9P07XNM5CHP0"
     },
-    "magicwormhole": {
+    {
+        "name":"magicwormhole",
         "category": "Utilities",
         "choco": "magic-wormhole",
         "content": "Magic Wormhole",
@@ -2767,7 +3113,8 @@
         "link": "https://github.com/magic-wormhole/magic-wormhole",
         "winget": "magic-wormhole.magic-wormhole"
     },
-    "croc": {
+    {
+        "name":"croc",
         "category": "Utilities",
         "choco": "croc",
         "content": "croc",
@@ -2775,7 +3122,8 @@
         "link": "https://github.com/schollz/croc",
         "winget": "schollz.croc"
     },
-    "qgis": {
+    {
+        "name":"qgis",
         "category": "Multimedia Tools",
         "choco": "qgis",
         "content": "QGIS",
@@ -2783,7 +3131,8 @@
         "link": "https://qgis.org/en/site/",
         "winget": "OSGeo.QGIS"
     },
-    "smplayer": {
+    {
+        "name":"smplayer",
         "category": "Multimedia Tools",
         "choco": "smplayer",
         "content": "SMPlayer",
@@ -2791,7 +3140,8 @@
         "link": "https://www.smplayer.info",
         "winget": "SMPlayer.SMPlayer"
     },
-    "glazewm": {
+    {
+        "name":"glazewm",
         "category": "Utilities",
         "choco": "na",
         "content": "GlazeWM",
@@ -2799,7 +3149,8 @@
         "link": "https://github.com/glzr-io/glazewm",
         "winget": "glzr-io.glazewm"
     },
-    "fancontrol": {
+    {
+        "name":"fancontrol",
         "category": "Utilities",
         "choco": "na",
         "content": "FanControl",
@@ -2807,7 +3158,8 @@
         "link": "https://getfancontrol.com/",
         "winget": "Rem0o.FanControl"
     },
-    "fnm": {
+    {
+        "name":"fnm",
         "category": "Development",
         "choco": "fnm",
         "content": "Fast Node Manager",
@@ -2815,7 +3167,8 @@
         "link": "https://github.com/Schniz/fnm",
         "winget": "Schniz.fnm"
     },
-    "Windhawk": {
+    {
+        "name":"Windhawk",
         "category": "Utilities",
         "choco": "windhawk",
         "content": "Windhawk",
@@ -2823,7 +3176,8 @@
         "link": "https://windhawk.net",
         "winget": "RamenSoftware.Windhawk"
     },
-    "ForceAutoHDR": {
+    {
+        "name":"ForceAutoHDR",
         "category": "Utilities",
         "choco": "na",
         "content": "ForceAutoHDR",
@@ -2831,7 +3185,8 @@
         "link": "https://github.com/7gxycn08/ForceAutoHDR",
         "winget": "ForceAutoHDR.7gxycn08"
     },
-    "JoyToKey": {
+    {
+        "name":"JoyToKey",
         "category": "Utilities",
         "choco": "joytokey",
         "content": "JoyToKey",
@@ -2839,7 +3194,8 @@
         "link": "https://joytokey.net/en/",
         "winget": "JTKsoftware.JoyToKey"
     },
-    "nditools": {
+    {
+        "name":"nditools",
         "category": "Multimedia Tools",
         "choco": "na",
         "content": "NDI Tools",
@@ -2847,7 +3203,8 @@
         "link": "https://ndi.video/",
         "winget": "NDI.NDITools"
     },
-    "kicad": {
+    {
+        "name":"kicad",
         "category": "Multimedia Tools",
         "choco": "na",
         "content": "Kicad",
@@ -2855,7 +3212,8 @@
         "link": "https://www.kicad.org/",
         "winget": "KiCad.KiCad"
     },
-    "FormatFactory": {
+    {
+        "name":"FormatFactory",
         "category": "Utilities",
         "choco": "formatfactory",
         "content": "Format Factory",
@@ -2863,7 +3221,8 @@
         "link": "http://www.pcfreetime.com/formatfactory/",
         "winget": "na"
     },
-    "dropox": {
+    {
+        "name":"dropox",
         "category": "Utilities",
         "choco": "na",
         "content": "Dropbox",
@@ -2871,7 +3230,8 @@
         "link": "https://www.dropbox.com/en_GB/desktop",
         "winget": "Dropbox.Dropbox"
     },
-    "OFGB": {
+    {
+        "name":"OFGB",
         "category": "Utilities",
         "choco": "ofgb",
         "content": "OFGB (Oh Frick Go Back)",
@@ -2879,7 +3239,8 @@
         "link": "https://github.com/xM4ddy/OFGB",
         "winget": "xM4ddy.OFGB"
     },
-    "PaleMoon": {
+    {
+        "name":"PaleMoon",
         "category": "Browsers",
         "choco": "paleMoon",
         "content": "PaleMoon",
@@ -2887,7 +3248,8 @@
         "link": "https://www.palemoon.org/download.shtml",
         "winget": "MoonchildProductions.PaleMoon"
     },
-    "Shotcut": {
+    {
+        "name":"Shotcut",
         "category": "Multimedia Tools",
         "choco": "na",
         "content": "Shotcut",
@@ -2895,7 +3257,8 @@
         "link": "https://shotcut.org/",
         "winget": "Meltytech.Shotcut"
     },
-    "LenovoLegionToolkit": {
+    {
+        "name":"LenovoLegionToolkit",
         "category": "Utilities",
         "choco": "na",
         "content": "Lenovo Legion Toolkit",
@@ -2903,7 +3266,8 @@
         "link": "https://github.com/BartoszCichecki/LenovoLegionToolkit",
         "winget": "BartoszCichecki.LenovoLegionToolkit"
     },
-    "PulsarEdit": {
+    {
+        "name":"PulsarEdit",
         "category": "Development",
         "choco": "pulsar",
         "content": "Pulsar",
@@ -2911,7 +3275,8 @@
         "link": "https://pulsar-edit.dev/",
         "winget": "Pulsar-Edit.Pulsar"
     },
-    "Aegisub": {
+    {
+        "name":"Aegisub",
         "category": "Development",
         "choco": "aegisub",
         "content": "Aegisub",
@@ -2919,7 +3284,8 @@
         "link": "https://github.com/Aegisub/Aegisub",
         "winget": "Aegisub.Aegisub"
     },
-    "SubtitleEdit": {
+    {
+        "name":"SubtitleEdit",
         "category": "Multimedia Tools",
         "choco": "na",
         "content": "Subtitle Edit",
@@ -2927,7 +3293,8 @@
         "link": "https://github.com/SubtitleEdit/subtitleedit",
         "winget": "Nikse.SubtitleEdit"
     },
-    "Fork": {
+    {
+        "name":"Fork",
         "category": "Development",
         "choco": "git-fork",
         "content": "Fork",
@@ -2935,4 +3302,4 @@
         "link": "https://git-fork.com/",
         "winget": "Fork.Fork"
     }
-}
+]

@@ -77,19 +77,19 @@ Get-ChildItem "config" | Where-Object {$psitem.extension -eq ".json"} | ForEach-
     $jsonAsObject = $json | convertfrom-json
 
     # Add 'WPFInstall' as a prefix to every entry-name in 'applications.json' file
-    if ($psitem.Name -eq "applications.json") {
-        foreach ($appEntryName in $jsonAsObject.PSObject.Properties.Name) {
-            $appEntryContent = $jsonAsObject.$appEntryName
-            $jsonAsObject.PSObject.Properties.Remove($appEntryName)
-            $jsonAsObject | Add-Member -MemberType NoteProperty -Name "WPFInstall$appEntryName" -Value $appEntryContent
-        }
-    }
+    # if ($psitem.Name -eq "applications.json") {
+    #     foreach ($appEntryName in $jsonAsObject.PSObject.Properties.Name) {
+    #         $appEntryContent = $jsonAsObject.$appEntryName
+    #         $jsonAsObject.PSObject.Properties.Remove($appEntryName)
+    #         $jsonAsObject | Add-Member -MemberType NoteProperty -Name "WPFInstall$appEntryName" -Value $appEntryContent
+    #     }
+    # }
 
     # The replace at the end is required, as without it the output of 'converto-json' will be somewhat weird for Multiline Strings
     # Most Notably is the scripts in some json files, making it harder for users who want to review these scripts, which're found in the compiled script
     $json = ($jsonAsObject | convertto-json -Depth 3).replace('\r\n',"`r`n")
 
-    $sync.configs.$($psitem.BaseName) = $json | convertfrom-json
+    #$sync.configs.$($psitem.BaseName) = $json | convertfrom-json
     $script_content.Add($(Write-output "`$sync.configs.$($psitem.BaseName) = '$json' `| convertfrom-json" ))
 }
 

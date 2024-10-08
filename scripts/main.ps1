@@ -116,9 +116,7 @@ $noimage = "https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512
 $noimage = [Windows.Media.Imaging.BitmapImage]::new([Uri]::new($noimage))
 
 # Extract unique categories from the applications configuration
-$uniqueCategories = $sync.configs.applications.PSObject.Properties.Value |
-    Where-Object { $_.Category } |
-    Select-Object -Unique -ExpandProperty Category
+$uniqueCategories = $sync.configs.applications | Select-Object -Unique -ExpandProperty Category
 
 # Create a custom PSCustomObject to simulate category-level checkboxes
 $categoryConfig = @{}
@@ -136,7 +134,7 @@ foreach ($category in $uniqueCategories) {
 
 # Now call the function with the final merged config
 Invoke-WPFUIElements -configVariable $sync.configs.appnavigation -targetGridName "appscategory" -columncount 1
-Invoke-WPFUIElements -configVariable $sync.configs.applications -targetGridName "appspanel" -columncount 1
+Invoke-WPFUIApps -configVariable $sync.configs.applications -targetGridName "appspanel" -columncount 1
 
 Invoke-WPFUIElements -configVariable $sync.configs.tweaks -targetGridName "tweakspanel" -columncount 2
 Invoke-WPFUIElements -configVariable $sync.configs.feature -targetGridName "featurespanel" -columncount 2
@@ -461,59 +459,11 @@ $filter = Get-WinUtilVariables -Type Label
 $labels = @{}
 ($sync.GetEnumerator()).where{$PSItem.Key -in $filter} | ForEach-Object {$labels[$_.Key] = $_.Value}
 
-$allCategories = $checkBoxes.Name | ForEach-Object {$sync.configs.applications.$_} | Select-Object  -Unique -ExpandProperty category
-
 $sync["SearchBar"].Add_TextChanged({
     if ($sync.SearchBar.Text -ne "") {
         $sync.SearchBarClearButton.Visibility = "Visible"
     } else {
         $sync.SearchBarClearButton.Visibility = "Collapsed"
-    }
-
-    $activeApplications = @()
-
-    $textToSearch = $sync.SearchBar.Text.ToLower()
-
-    foreach ($CheckBox in $CheckBoxes) {
-        # Skip if the checkbox is null, it doesn't have content or it is the prefer Choco checkbox
-        if ($CheckBox -eq $null -or $CheckBox.Value -eq $null -or $CheckBox.Value.Content -eq $null -or $CheckBox.Name -eq "WPFpreferChocolatey") {
-            continue
-        }
-
-        $checkBoxName = $CheckBox.Key
-        $textBlockName = $checkBoxName + "Link"
-
-        # Retrieve the corresponding text block based on the generated name
-        $textBlock = $sync[$textBlockName]
-
-        if ($CheckBox.Value.Content.ToString().ToLower().Contains($textToSearch)) {
-            $CheckBox.Value.Visibility = "Visible"
-            $activeApplications += $sync.configs.applications.$checkboxName
-            # Set the corresponding text block visibility
-            if ($textBlock -ne $null -and $textBlock -is [System.Windows.Controls.TextBlock]) {
-                $textBlock.Visibility = "Visible"
-            }
-        } else {
-            $CheckBox.Value.Visibility = "Collapsed"
-            # Set the corresponding text block visibility
-            if ($textBlock -ne $null -and $textBlock -is [System.Windows.Controls.TextBlock]) {
-                $textBlock.Visibility = "Collapsed"
-            }
-        }
-    }
-
-    $activeCategories = $activeApplications | Select-Object -ExpandProperty category -Unique
-
-    foreach ($category in $activeCategories) {
-        $sync[$category].Visibility = "Visible"
-    }
-    if ($activeCategories) {
-        $inactiveCategories = Compare-Object -ReferenceObject $allCategories -DifferenceObject $activeCategories -PassThru
-    } else {
-        $inactiveCategories = $allCategories
-    }
-    foreach ($category in $inactiveCategories) {
-        $sync[$category].Visibility = "Collapsed"
     }
 })
 
