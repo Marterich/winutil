@@ -97,30 +97,13 @@ $sync.configs.applications.PSObject.Properties | ForEach-Object {
     $sync.configs.applicationsHashtable[$_.Name] = $_.Value
 }
 
-# Now call the function with the final merged config
+# Load UI elements
 Invoke-WPFUIElements -configVariable $sync.configs.appnavigation -targetGridName "appscategory" -columncount 1
-
-# Add logic to handle click to the ToggleView Button on the Install Tab
-$sync.WPFToggleView.Add_Click({
-    $sync.CompactView = -not $sync.CompactView
-    Update-AppTileProperties
-    if ($sync.SearchBar.Text -eq "") {
-        Set-CategoryVisibility -Category "*"
-    }
-})
 Invoke-WPFUIApps -Apps $sync.configs.applicationsHashtable -targetGridName "appspanel"
-
 Invoke-WPFUIElements -configVariable $sync.configs.tweaks -targetGridName "tweakspanel" -columncount 2
-
 Invoke-WPFUIElements -configVariable $sync.configs.feature -targetGridName "featurespanel" -columncount 2
 
-# Future implementation: Add Windows Version to updates panel
-#Invoke-WPFUIElements -configVariable $sync.configs.updates -targetGridName "updatespanel" -columncount 1
-
-#===========================================================================
 # Store Form Objects In PowerShell
-#===========================================================================
-
 $xaml.SelectNodes("//*[@Name]") | ForEach-Object {$sync["$("$($psitem.Name)")"] = $sync["Form"].FindName($psitem.Name)}
 
 #Persist the Chocolatey preference across winutil restarts
