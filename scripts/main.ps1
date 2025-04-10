@@ -63,28 +63,28 @@ if (-NOT ($readerOperationSuccessful)) {
 $lastThemeChangeTime = [datetime]::MinValue
 $debounceInterval = [timespan]::FromSeconds(2)
 $sync.Form.Add_Loaded({
-    $interopHelper = New-Object System.Windows.Interop.WindowInteropHelper $sync.Form
-    $hwndSource = [System.Windows.Interop.HwndSource]::FromHwnd($interopHelper.Handle)
-    $hwndSource.AddHook({
-        param (
-            [System.IntPtr]$hwnd,
-            [int]$msg,
-            [System.IntPtr]$wParam,
-            [System.IntPtr]$lParam,
-            [ref]$handled
-        )
-        # Check for the Event WM_SETTINGCHANGE (0x1001A) and validate that Button shows the icon for "Auto" => [char]0xF08C
-        if (($msg -eq 0x001A) -and $sync.ThemeButton.Content -eq [char]0xF08C) {
-            $currentTime = [datetime]::Now
-            if ($currentTime - $lastThemeChangeTime -gt $debounceInterval) {
-                Invoke-WinutilThemeChange -theme "Auto"
-                $script:lastThemeChangeTime = $currentTime
-                $handled = $true
-            }
-        }
-        return 0
+        $interopHelper = New-Object System.Windows.Interop.WindowInteropHelper $sync.Form
+        $hwndSource = [System.Windows.Interop.HwndSource]::FromHwnd($interopHelper.Handle)
+        $hwndSource.AddHook({
+                param (
+                    [System.IntPtr]$hwnd,
+                    [int]$msg,
+                    [System.IntPtr]$wParam,
+                    [System.IntPtr]$lParam,
+                    [ref]$handled
+                )
+                # Check for the Event WM_SETTINGCHANGE (0x1001A) and validate that Button shows the icon for "Auto" => [char]0xF08C
+                if (($msg -eq 0x001A) -and $sync.ThemeButton.Content -eq [char]0xF08C) {
+                    $currentTime = [datetime]::Now
+                    if ($currentTime - $lastThemeChangeTime -gt $debounceInterval) {
+                        Invoke-WinutilThemeChange -theme "Auto"
+                        $script:lastThemeChangeTime = $currentTime
+                        $handled = $true
+                    }
+                }
+                return 0
+            })
     })
-})
 
 Invoke-WinutilThemeChange -init $true
 # Load the configuration files
@@ -97,49 +97,50 @@ $sync.configs.applications.PSObject.Properties | ForEach-Object {
     $sync.configs.applicationsHashtable[$_.Name] = $_.Value
 }
 
-# Load UI elements
+Write-Debug "UI elements loading..."
 Invoke-WPFUIElements -configVariable $sync.configs.appnavigation -targetGridName "appscategory" -columncount 1
 Invoke-WPFUIApps -Apps $sync.configs.applicationsHashtable -targetGridName "appspanel"
 Invoke-WPFUIElements -configVariable $sync.configs.tweaks -targetGridName "tweakspanel" -columncount 2
 Invoke-WPFUIElements -configVariable $sync.configs.feature -targetGridName "featurespanel" -columncount 2
 
-# Store Form Objects In PowerShell
-$xaml.SelectNodes("//*[@Name]") | ForEach-Object {$sync["$("$($psitem.Name)")"] = $sync["Form"].FindName($psitem.Name)}
+Write-Debug "Storing Form Objects In PowerShell..."
+$xaml.SelectNodes("//*[@Name]") | ForEach-Object { $sync["$("$($psitem.Name)")"] = $sync["Form"].FindName($psitem.Name) }
 
 #Persist the Chocolatey preference across winutil restarts
 $ChocoPreferencePath = "$env:LOCALAPPDATA\winutil\preferChocolatey.ini"
 $sync.ChocoRadioButton.Add_Checked({New-Item -Path $ChocoPreferencePath -Force })
 $sync.ChocoRadioButton.Add_Unchecked({Remove-Item $ChocoPreferencePath -Force})
 if (Test-Path $ChocoPreferencePath) {
-   $sync.ChocoRadioButton.IsChecked = $true
+    $sync.ChocoRadioButton.IsChecked = $true
 }
 
-$sync.keys | ForEach-Object {
-    if($sync.$psitem) {
-        if($($sync["$psitem"].GetType() | Select-Object -ExpandProperty Name) -eq "ToggleButton") {
-            $sync["$psitem"].Add_Click({
-                [System.Object]$Sender = $args[0]
-                Invoke-WPFButton $Sender.name
+# Setup the event handlers for the buttons and other controls
+foreach ($psitem in $sync.keys) {
+    if (-not $sync.$psitem) {
+        Write-Debug "Item $psitem in sync is null. Skipping..."
+        continue
+    }
+    $itemType = $sync["$psitem"].GetType() | Select-Object -ExpandProperty Name
+    if (-not $itemType) {
+        Write-Debug "Item type for $psitem is null or could not be determined. Skipping..."
+        continue
+    }
+    # If the item is a ToggleButton or Button, attach a click event handler
+    if ($itemType -in @("ToggleButton", "Button")) {
+        $sync["$psitem"].Add_Click({
+                [System.Object]$clickedButton = $args[0]
+                Invoke-WPFButton $clickedButton.name
             })
-        }
+    }
 
-        if($($sync["$psitem"].GetType() | Select-Object -ExpandProperty Name) -eq "Button") {
-            $sync["$psitem"].Add_Click({
-                [System.Object]$Sender = $args[0]
-                Invoke-WPFButton $Sender.name
+    # If the item is a TextBlock and its name ends with "Link", attach a mouse-up event handler
+    if ($itemType -eq "TextBlock" -and $sync["$psitem"].Name -and $sync["$psitem"].Name.EndsWith("Link")) {
+        $sync["$psitem"].Add_MouseUp({
+                [System.Object]$clickedLink = $args[0]
+                # Open the URL specified in the ToolTip property of the TextBlock
+                Start-Process $clickedLink.ToolTip -ErrorAction Stop
+                Write-Debug "Opening: $($clickedLink.ToolTip)"
             })
-        }
-
-        if ($($sync["$psitem"].GetType() | Select-Object -ExpandProperty Name) -eq "TextBlock") {
-            if ($sync["$psitem"].Name.EndsWith("Link")) {
-                $sync["$psitem"].Add_MouseUp({
-                    [System.Object]$Sender = $args[0]
-                    Start-Process $Sender.ToolTip -ErrorAction Stop
-                    Write-Debug "Opening: $($Sender.ToolTip)"
-                })
-            }
-
-        }
     }
 }
 
@@ -192,8 +193,8 @@ function Update-AppTileProperties {
 }
 # We need to update the app tile properties when the form is resized because to fill a WrapPanel update the width of the elemenmt manually (afaik)
 $sync.Form.Add_SizeChanged({
-    Update-AppTileProperties
-})
+        Update-AppTileProperties
+    })
 
 # Progress bar in taskbaritem > Set-WinUtilProgressbar
 $sync["Form"].TaskbarItemInfo = New-Object System.Windows.Shell.TaskbarItemInfo
@@ -203,16 +204,16 @@ Set-WinUtilTaskbaritem -state "None"
 $sync["Form"].title = $sync["Form"].title + " " + $sync.version
 # Set the commands that will run when the form is closed
 $sync["Form"].Add_Closing({
-    $sync.runspace.Dispose()
-    $sync.runspace.Close()
-    [System.GC]::Collect()
-})
+        $sync.runspace.Dispose()
+        $sync.runspace.Close()
+        [System.GC]::Collect()
+    })
 
 # Attach the event handler to the Click event
 $sync.SearchBarClearButton.Add_Click({
-    $sync.SearchBar.Text = ""
-    $sync.SearchBarClearButton.Visibility = "Collapsed"
-})
+        $sync.SearchBar.Text = ""
+        $sync.SearchBarClearButton.Visibility = "Collapsed"
+    })
 
 # add some shortcuts for people that don't like clicking
 $commonKeyEvents = {
@@ -264,33 +265,33 @@ $commonKeyEvents = {
 $sync["Form"].Add_PreViewKeyDown($commonKeyEvents)
 
 $sync["Form"].Add_MouseLeftButtonDown({
-    Invoke-WPFPopup -Action "Hide" -Popups @("Settings", "Theme")
-    $sync["Form"].DragMove()
-})
+        Invoke-WPFPopup -Action "Hide" -Popups @("Settings", "Theme")
+        $sync["Form"].DragMove()
+    })
 
 $sync["Form"].Add_MouseDoubleClick({
-    if ($_.OriginalSource -is [System.Windows.Controls.Grid] -or
-        $_.OriginalSource -is [System.Windows.Controls.StackPanel]) {
+        if ($_.OriginalSource -is [System.Windows.Controls.Grid] -or
+            $_.OriginalSource -is [System.Windows.Controls.StackPanel]) {
             if ($sync["Form"].WindowState -eq [Windows.WindowState]::Normal) {
                 $sync["Form"].WindowState = [Windows.WindowState]::Maximized
             }
             else{
                 $sync["Form"].WindowState = [Windows.WindowState]::Normal
             }
-    }
-})
+        }
+    })
 
 $sync["Form"].Add_Deactivated({
-    Write-Debug "WinUtil lost focus"
-    Invoke-WPFPopup -Action "Hide" -Popups @("Settings", "Theme")
-})
+        Write-Debug "WinUtil lost focus"
+        Invoke-WPFPopup -Action "Hide" -Popups @("Settings", "Theme")
+    })
 
 $sync["Form"].Add_ContentRendered({
 
-    try {
-        [void][Window]
+        try {
+            [void][Window]
     } catch {
-Add-Type @"
+            Add-Type @"
         using System;
         using System.Runtime.InteropServices;
         public class Window {
@@ -315,100 +316,100 @@ Add-Type @"
             public int Bottom; // y position of lower-right corner
         }
 "@
-    }
-
-   foreach ($proc in (Get-Process).where{ $_.MainWindowTitle -and $_.MainWindowTitle -like "*titus*" }) {
-        # Check if the process's MainWindowHandle is valid
-        if ($proc.MainWindowHandle -ne [System.IntPtr]::Zero) {
-            Write-Debug "MainWindowHandle: $($proc.Id) $($proc.MainWindowTitle) $($proc.MainWindowHandle)"
-            $windowHandle = $proc.MainWindowHandle
-        } else {
-            Write-Warning "Process found, but no MainWindowHandle: $($proc.Id) $($proc.MainWindowTitle)"
-
         }
-    }
 
-    $rect = New-Object RECT
-    [Window]::GetWindowRect($windowHandle, [ref]$rect)
+        foreach ($proc in (Get-Process).where{ $_.MainWindowTitle -and $_.MainWindowTitle -like "*titus*" }) {
+            # Check if the process's MainWindowHandle is valid
+            if ($proc.MainWindowHandle -ne [System.IntPtr]::Zero) {
+                Write-Debug "MainWindowHandle: $($proc.Id) $($proc.MainWindowTitle) $($proc.MainWindowHandle)"
+                $windowHandle = $proc.MainWindowHandle
+        } else {
+                Write-Warning "Process found, but no MainWindowHandle: $($proc.Id) $($proc.MainWindowTitle)"
+
+            }
+        }
+
+        $rect = New-Object RECT
+        [Window]::GetWindowRect($windowHandle, [ref]$rect)
     $width  = $rect.Right  - $rect.Left
-    $height = $rect.Bottom - $rect.Top
+        $height = $rect.Bottom - $rect.Top
 
-    Write-Debug "UpperLeft:$($rect.Left),$($rect.Top) LowerBottom:$($rect.Right),$($rect.Bottom). Width:$($width) Height:$($height)"
+        Write-Debug "UpperLeft:$($rect.Left),$($rect.Top) LowerBottom:$($rect.Right),$($rect.Bottom). Width:$($width) Height:$($height)"
 
-    # Load the Windows Forms assembly
-    Add-Type -AssemblyName System.Windows.Forms
-    $primaryScreen = [System.Windows.Forms.Screen]::PrimaryScreen
-    # Check if the primary screen is found
-    if ($primaryScreen) {
-        # Extract screen width and height for the primary monitor
-        $screenWidth = $primaryScreen.Bounds.Width
-        $screenHeight = $primaryScreen.Bounds.Height
+        # Load the Windows Forms assembly
+        Add-Type -AssemblyName System.Windows.Forms
+        $primaryScreen = [System.Windows.Forms.Screen]::PrimaryScreen
+        # Check if the primary screen is found
+        if ($primaryScreen) {
+            # Extract screen width and height for the primary monitor
+            $screenWidth = $primaryScreen.Bounds.Width
+            $screenHeight = $primaryScreen.Bounds.Height
 
-        # Print the screen size
-        Write-Debug "Primary Monitor Width: $screenWidth pixels"
-        Write-Debug "Primary Monitor Height: $screenHeight pixels"
+            # Print the screen size
+            Write-Debug "Primary Monitor Width: $screenWidth pixels"
+            Write-Debug "Primary Monitor Height: $screenHeight pixels"
 
-        # Compare with the primary monitor size
-        if ($width -gt $screenWidth -or $height -gt $screenHeight) {
-            Write-Debug "The specified width and/or height is greater than the primary monitor size."
-            [void][Window]::MoveWindow($windowHandle, 0, 0, $screenWidth, $screenHeight, $True)
+            # Compare with the primary monitor size
+            if ($width -gt $screenWidth -or $height -gt $screenHeight) {
+                Write-Debug "The specified width and/or height is greater than the primary monitor size."
+                [void][Window]::MoveWindow($windowHandle, 0, 0, $screenWidth, $screenHeight, $True)
         } else {
-            Write-Debug "The specified width and height are within the primary monitor size limits."
-        }
+                Write-Debug "The specified width and height are within the primary monitor size limits."
+            }
     } else {
-        Write-Debug "Unable to retrieve information about the primary monitor."
-    }
-
-    Invoke-WPFTab "WPFTab1BT"
-    $sync["Form"].Focus()
-
-    # maybe this is not the best place to load and execute config file?
-    # maybe community can help?
-    if ($PARAM_CONFIG) {
-        Invoke-WPFImpex -type "import" -Config $PARAM_CONFIG
-        if ($PARAM_RUN) {
-            while ($sync.ProcessRunning) {
-                Start-Sleep -Seconds 5
-            }
-            Start-Sleep -Seconds 5
-
-            Write-Host "Applying tweaks..."
-            Invoke-WPFtweaksbutton
-            while ($sync.ProcessRunning) {
-                Start-Sleep -Seconds 5
-            }
-            Start-Sleep -Seconds 5
-
-            Write-Host "Installing features..."
-            Invoke-WPFFeatureInstall
-            while ($sync.ProcessRunning) {
-                Start-Sleep -Seconds 5
-            }
-
-            Start-Sleep -Seconds 5
-            Write-Host "Installing applications..."
-            while ($sync.ProcessRunning) {
-                Start-Sleep -Seconds 1
-            }
-            Invoke-WPFInstall
-            Start-Sleep -Seconds 5
-
-            Write-Host "Done."
+            Write-Debug "Unable to retrieve information about the primary monitor."
         }
-    }
 
-})
+        Invoke-WPFTab "WPFTab1BT"
+        $sync["Form"].Focus()
+
+        # maybe this is not the best place to load and execute config file?
+        # maybe community can help?
+        if ($PARAM_CONFIG) {
+            Invoke-WPFImpex -type "import" -Config $PARAM_CONFIG
+            if ($PARAM_RUN) {
+                while ($sync.ProcessRunning) {
+                    Start-Sleep -Seconds 5
+                }
+                Start-Sleep -Seconds 5
+
+                Write-Host "Applying tweaks..."
+                Invoke-WPFtweaksbutton
+                while ($sync.ProcessRunning) {
+                    Start-Sleep -Seconds 5
+                }
+                Start-Sleep -Seconds 5
+
+                Write-Host "Installing features..."
+                Invoke-WPFFeatureInstall
+                while ($sync.ProcessRunning) {
+                    Start-Sleep -Seconds 5
+                }
+
+                Start-Sleep -Seconds 5
+                Write-Host "Installing applications..."
+                while ($sync.ProcessRunning) {
+                    Start-Sleep -Seconds 1
+                }
+                Invoke-WPFInstall
+                Start-Sleep -Seconds 5
+
+                Write-Host "Done."
+            }
+        }
+
+    })
 
 # Add event handlers for the RadioButtons
 $sync["ISOdownloader"].add_Checked({
-    $sync["ISORelease"].Visibility = [System.Windows.Visibility]::Visible
-    $sync["ISOLanguage"].Visibility = [System.Windows.Visibility]::Visible
-})
+        $sync["ISORelease"].Visibility = [System.Windows.Visibility]::Visible
+        $sync["ISOLanguage"].Visibility = [System.Windows.Visibility]::Visible
+    })
 
 $sync["ISOmanual"].add_Checked({
-    $sync["ISORelease"].Visibility = [System.Windows.Visibility]::Collapsed
-    $sync["ISOLanguage"].Visibility = [System.Windows.Visibility]::Collapsed
-})
+        $sync["ISORelease"].Visibility = [System.Windows.Visibility]::Collapsed
+        $sync["ISOLanguage"].Visibility = [System.Windows.Visibility]::Collapsed
+    })
 
 $sync["ISORelease"].Items.Add("24H2") | Out-Null
 $sync["ISORelease"].SelectedItem = "24H2"
@@ -426,24 +427,24 @@ if ($sync["ISOLanguage"].Items.Count -eq 1) {
 $sync["ISOLanguage"].SelectedIndex = 0
 
 $sync["SearchBar"].Add_TextChanged({
-    if ($sync.SearchBar.Text -ne "") {
-        $sync.SearchBarClearButton.Visibility = "Visible"
+        if ($sync.SearchBar.Text -ne "") {
+            $sync.SearchBarClearButton.Visibility = "Visible"
     } else {
-        $sync.SearchBarClearButton.Visibility = "Collapsed"
-    }
-    switch ($sync.currentTab) {
-        "Install" {
-            Find-AppsByNameOrDescription -SearchString $sync.SearchBar.Text
+            $sync.SearchBarClearButton.Visibility = "Collapsed"
         }
-    }
-})
+        switch ($sync.currentTab) {
+            "Install" {
+                Find-AppsByNameOrDescription -SearchString $sync.SearchBar.Text
+            }
+        }
+    })
 
 $sync["Form"].Add_Loaded({
-    param($e)
-    $sync.Form.MinWidth = "1000"
-    $sync["Form"].MaxWidth = [Double]::PositiveInfinity
-    $sync["Form"].MaxHeight = [Double]::PositiveInfinity
-})
+        param($e)
+        $sync.Form.MinWidth = "1000"
+        $sync["Form"].MaxWidth = [Double]::PositiveInfinity
+        $sync["Form"].MaxHeight = [Double]::PositiveInfinity
+    })
 
 $NavLogoPanel = $sync["Form"].FindName("NavLogoPanel")
 $NavLogoPanel.Children.Add((Invoke-WinUtilAssets -Type "logo" -Size 25)) | Out-Null
@@ -468,82 +469,82 @@ $sync["warningrender"] = (Invoke-WinUtilAssets -Type "warning" -Size 512 -Render
 Set-WinUtilTaskbaritem -overlay "logo"
 
 $sync["Form"].Add_Activated({
-    Set-WinUtilTaskbaritem -overlay "logo"
-})
+        Set-WinUtilTaskbaritem -overlay "logo"
+    })
 
 $sync["ThemeButton"].Add_Click({
-    Write-Debug "ThemeButton clicked"
-    Invoke-WPFPopup -PopupActionTable @{ "Settings" = "Hide"; "Theme" = "Toggle" }
-    $_.Handled = $false
-})
+        Write-Debug "ThemeButton clicked"
+        Invoke-WPFPopup -PopupActionTable @{ "Settings" = "Hide"; "Theme" = "Toggle" }
+        $_.Handled = $false
+    })
 $sync["AutoThemeMenuItem"].Add_Click({
-    Write-Debug "About clicked"
-    Invoke-WPFPopup -Action "Hide" -Popups @("Theme")
-    Invoke-WinutilThemeChange -theme "Auto"
-    $_.Handled = $false
-})
+        Write-Debug "About clicked"
+        Invoke-WPFPopup -Action "Hide" -Popups @("Theme")
+        Invoke-WinutilThemeChange -theme "Auto"
+        $_.Handled = $false
+    })
 $sync["DarkThemeMenuItem"].Add_Click({
-    Write-Debug "Dark Theme clicked"
-    Invoke-WPFPopup -Action "Hide" -Popups @("Theme")
-    Invoke-WinutilThemeChange -theme "Dark"
-    $_.Handled = $false
-})
+        Write-Debug "Dark Theme clicked"
+        Invoke-WPFPopup -Action "Hide" -Popups @("Theme")
+        Invoke-WinutilThemeChange -theme "Dark"
+        $_.Handled = $false
+    })
 $sync["LightThemeMenuItem"].Add_Click({
-    Write-Debug "Light Theme clicked"
-    Invoke-WPFPopup -Action "Hide" -Popups @("Theme")
-    Invoke-WinutilThemeChange -theme "Light"
-    $_.Handled = $false
-})
+        Write-Debug "Light Theme clicked"
+        Invoke-WPFPopup -Action "Hide" -Popups @("Theme")
+        Invoke-WinutilThemeChange -theme "Light"
+        $_.Handled = $false
+    })
 
 
 $sync["SettingsButton"].Add_Click({
-    Write-Debug "SettingsButton clicked"
-    Invoke-WPFPopup -PopupActionTable @{ "Settings" = "Toggle"; "Theme" = "Hide" }
-    $_.Handled = $false
-})
+        Write-Debug "SettingsButton clicked"
+        Invoke-WPFPopup -PopupActionTable @{ "Settings" = "Toggle"; "Theme" = "Hide" }
+        $_.Handled = $false
+    })
 $sync["ImportMenuItem"].Add_Click({
-    Write-Debug "Import clicked"
-    Invoke-WPFPopup -Action "Hide" -Popups @("Settings")
-    Invoke-WPFImpex -type "import"
-    $_.Handled = $false
-})
+        Write-Debug "Import clicked"
+        Invoke-WPFPopup -Action "Hide" -Popups @("Settings")
+        Invoke-WPFImpex -type "import"
+        $_.Handled = $false
+    })
 $sync["ExportMenuItem"].Add_Click({
-    Write-Debug "Export clicked"
-    Invoke-WPFPopup -Action "Hide" -Popups @("Settings")
-    Invoke-WPFImpex -type "export"
-    $_.Handled = $false
-})
+        Write-Debug "Export clicked"
+        Invoke-WPFPopup -Action "Hide" -Popups @("Settings")
+        Invoke-WPFImpex -type "export"
+        $_.Handled = $false
+    })
 $sync["AboutMenuItem"].Add_Click({
-    Write-Debug "About clicked"
-    Invoke-WPFPopup -Action "Hide" -Popups @("Settings")
+        Write-Debug "About clicked"
+        Invoke-WPFPopup -Action "Hide" -Popups @("Settings")
 
-    $authorInfo = @"
+        $authorInfo = @"
 Author   : <a href="https://github.com/ChrisTitusTech">@christitustech</a>
 Runspace : <a href="https://github.com/DeveloperDurp">@DeveloperDurp</a>
 MicroWin : <a href="https://github.com/KonTy">@KonTy</a>, <a href="https://github.com/CodingWonders">@CodingWonders</a>
 GitHub   : <a href="https://github.com/ChrisTitusTech/winutil">ChrisTitusTech/winutil</a>
 Version  : <a href="https://github.com/ChrisTitusTech/winutil/releases/tag/$($sync.version)">$($sync.version)</a>
 "@
-    Show-CustomDialog -Title "About" -Message $authorInfo
-})
+        Show-CustomDialog -Title "About" -Message $authorInfo
+    })
 $sync["SponsorMenuItem"].Add_Click({
-    Write-Debug "Sponsors clicked"
-    Invoke-WPFPopup -Action "Hide" -Popups @("Settings")
+        Write-Debug "Sponsors clicked"
+        Invoke-WPFPopup -Action "Hide" -Popups @("Settings")
 
-    $authorInfo = @"
+        $authorInfo = @"
 <a href="https://github.com/sponsors/ChrisTitusTech">Current sponsors for ChrisTitusTech:</a>
 "@
-    $authorInfo += "`n"
-    try {
-        $sponsors = Invoke-WinUtilSponsors
-        foreach ($sponsor in $sponsors) {
-            $authorInfo += "<a href=`"https://github.com/sponsors/ChrisTitusTech`">$sponsor</a>`n"
-        }
+        $authorInfo += "`n"
+        try {
+            $sponsors = Invoke-WinUtilSponsors
+            foreach ($sponsor in $sponsors) {
+                $authorInfo += "<a href=`"https://github.com/sponsors/ChrisTitusTech`">$sponsor</a>`n"
+            }
     } catch {
-        $authorInfo += "An error occurred while fetching or processing the sponsors: $_`n"
-    }
-    Show-CustomDialog -Title "Sponsors" -Message $authorInfo -EnableScroll $true
-})
+            $authorInfo += "An error occurred while fetching or processing the sponsors: $_`n"
+        }
+        Show-CustomDialog -Title "Sponsors" -Message $authorInfo -EnableScroll $true
+    })
 
 $sync["Form"].ShowDialog() | out-null
 Stop-Transcript
