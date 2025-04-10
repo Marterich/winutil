@@ -29,23 +29,6 @@ $sync.runspace = [runspacefactory]::CreateRunspacePool(
 # Open the RunspacePool instance
 $sync.runspace.Open()
 
-# Create classes for different exceptions
-
-class WingetFailedInstall : Exception {
-    [string]$additionalData
-    WingetFailedInstall($Message) : base($Message) {}
-}
-
-class ChocoFailedInstall : Exception {
-    [string]$additionalData
-    ChocoFailedInstall($Message) : base($Message) {}
-}
-
-class GenericException : Exception {
-    [string]$additionalData
-    GenericException($Message) : base($Message) {}
-}
-
 [void][System.Reflection.Assembly]::LoadWithPartialName('presentationframework')
 [xml]$XAML = $inputXML
 
