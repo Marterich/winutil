@@ -46,8 +46,6 @@ class GenericException : Exception {
     GenericException($Message) : base($Message) {}
 }
 
-$inputXML = $inputXML -replace 'mc:Ignorable="d"', '' -replace "x:N", 'N' -replace '^<Win.*', '<Window'
-
 [void][System.Reflection.Assembly]::LoadWithPartialName('presentationframework')
 [xml]$XAML = $inputXML
 
