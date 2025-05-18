@@ -49,30 +49,41 @@ jobs:
           }
         shell: pwsh
 
-      - name: Create and import code signing certificate
-        shell: pwsh
-        run: |
-          [System.IO.File]::WriteAllBytes("$env:USERPROFILE\code-signing-cert.pfx", [System.Convert]::FromBase64String("$env:CERTIFICATE_BASE64"))
-          Import-PfxCertificate -FilePath "$env:USERPROFILE\code-signing-cert.pfx" -CertStoreLocation Cert:\CurrentUser\My
+      # - name: Create and import code signing certificate
+      #   shell: pwsh
+      #   run: |
+      #     [System.IO.File]::WriteAllBytes("$env:USERPROFILE\code-signing-cert.pfx", [System.Convert]::FromBase64String("$env:CERTIFICATE_BASE64"))
+      #     Import-PfxCertificate -FilePath "$env:USERPROFILE\code-signing-cert.pfx" -CertStoreLocation Cert:\CurrentUser\My
 
-      - name: Code sign winutil.ps1
-        shell: pwsh
-        run: |
-          $cert = Get-ChildItem -Path Cert:\CurrentUser\My -CodeSigningCert | Select-Object -First 1
-          if ($null -eq $cert) { throw "Code signing certificate not found" }
-          Set-AuthenticodeSignature -FilePath ./winutil.ps1 -Certificate $cert -TimeStampServer "http://timestamp.digicert.com"
+      # - name: Code sign winutil.ps1
+      #   shell: pwsh
+      #   run: |
+      #     $cert = Get-ChildItem -Path Cert:\CurrentUser\My -CodeSigningCert | Select-Object -First 1
+      #     if ($null -eq $cert) { throw "Code signing certificate not found" }
+      #     Set-AuthenticodeSignature -FilePath ./winutil.ps1 -Certificate $cert -TimeStampServer "http://timestamp.digicert.com"
 
-      - name: Verify code signature
+      # - name: Verify code signature
+      #   shell: pwsh
+      #   run: |
+      #     $signature = Get-AuthenticodeSignature -FilePath ./winutil.ps1
+      #     if ($signature.Status -ne 'Valid') { throw "Code signing failed" }
+      
+      - name: Create file hash
         shell: pwsh
         run: |
-          $signature = Get-AuthenticodeSignature -FilePath ./winutil.ps1
-          if ($signature.Status -ne 'Valid') { throw "Code signing failed" }
+          (Get-FileHash .\winutil.ps1 -Algorithm SHA256).Hash > sha256.sum
 
       - name: Upload winutil.ps1 as artifact
         uses: actions/upload-artifact@v4
         with:
           name: winutil
           path: ./winutil.ps1
+      
+      - name: Upload sha256.sum as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Checksum
+          path: ./sha256.sum
 
       - name: Generate Release Notes
         id: generate_notes
@@ -94,7 +105,9 @@ jobs:
 
             ![GitHub Downloads (specific asset, specific tag)](https://img.shields.io/github/downloads/ChrisTitusTech/winutil/${{ env.VERSION }}/winutil.ps1)
           append_body: false
-          files: ./winutil.ps1
+          files: 
+            ./winutil.ps1 
+            ./sha256.sum
           prerelease: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
